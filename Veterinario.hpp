@@ -11,6 +11,8 @@ class Veterinario
 private:
 	string m_crmv;
 public:
+	string get_m_crmv();
+	void set_m_crmv(string crmv);
 	Veterinario();
 	~Veterinario();	
 }
