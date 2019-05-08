@@ -17,9 +17,10 @@ string converter_para_maiusculo(string& sua_string)
  @ ...
  * ....
  */
-Tratador::Tratador(int id, string nome, string cpf, short idade, string tipo_sanguineo, char fator_rh, string especialidade)
-: funcionario(id,nome,cpf,idade, cpf, idade, tipo_sanguineo, fator_rh, especialidade)
+Tratador::Tratador(int id, string nome, string cpf, short idade, string tipo_sanguineo, char fator_rh, string especialidade, int nivel_de_segurança)
+: funcionario(id,nome,cpf,idade, cpf, idade, tipo_sanguineo, fator_rh, especialidade, niv)
 {
+
 }
 void Tratador::set_m_id(int id)
 {
@@ -81,5 +82,17 @@ char get_fator_rh()
 void set_m_especialidade(string especialidade)
 {
 	m_especialidade = especialidade;
+}
+void set_m_nivel_de_segurança(int nivel_de_segurança)
+{
+	while(nivel_de_segurança <= 0 || nivel_de_segurança > 2)
+	{
+		cout << "Entrada inválida, entre com um valor válido" << endl;
+	}
+	m_nivel_de_segurança = nivel_de_segurança;
+}
+int get_m_nivel_de_segurança()
+{
+	return m_nivel_de_segurança;
 }
 Tratador::~Tratador(){}
