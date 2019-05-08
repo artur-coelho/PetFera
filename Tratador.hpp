@@ -11,6 +11,8 @@ private:
 	int m_nivel_de_segurança;
 public:
 	int get_m_nivel_de_segurança();
+	void set_m_nivel_de_segurança(int niv);
+	
 	Tratador();
 	~Tratador();	
 }
