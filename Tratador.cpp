@@ -1,15 +1,7 @@
 #include <iostream>
 #include "Tratador.hpp"
- 
+#include "funcoes_uteis.hpp" 
 
-string converter_para_maiusculo(string& sua_string)
-{
-  for(int i = 0; i <sua_string.length(); i++)
-  {
-    sua_string[i] = toupper(sua_string[i]);
-  }
-  return sua_string;
-}
  /*!
  * @Brief Construtor de Tratador
  * @param id  id do tratador
@@ -87,7 +79,7 @@ void set_m_nivel_de_segurança(int nivel_de_segurança)
 {
 	while(nivel_de_segurança <= 0 || nivel_de_segurança > 2)
 	{
-		cout << "Entrada inválida, entre com um valor válido" << endl;
+		cout << "Entrada inválida, lembre-se que deve ser um valor entre 0 e 2" << endl;
 	}
 	m_nivel_de_segurança = nivel_de_segurança;
 }
