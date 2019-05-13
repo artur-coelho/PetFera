@@ -1,9 +1,5 @@
 #include "Ave.hpp"
 
-Ave::Ave() : Animal() { /*Construtor padrão*/}
-
-Ave::~Ave() { /*Destrutor */}
-
 void Ave::set_m_tamanho_do_bico(double tamanho_do_bico) {
 	m_tamanho_do_bico = tamanho_do_bico;
 }
