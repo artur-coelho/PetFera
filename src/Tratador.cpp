@@ -1,6 +1,5 @@
-#include <iostream>
 #include "Tratador.hpp"
-#include "funcoes_uteis.hpp" 
+#include "funcoes_uteis.hpp"
 
  /*!
  * @Brief Construtor de Tratador
@@ -9,8 +8,8 @@
  @ ...
  * ....
  */
-Tratador::Tratador(int id, string nome, string cpf, short idade, string tipo_sanguineo, char fator_rh, string especialidade, int nivel_de_segurança)
-: funcionario(id,nome,cpf,idade, cpf, idade, tipo_sanguineo, fator_rh, especialidade, niv)
+Tratador::Tratador(int id, string nome, string cpf, short idade, string tipo_sanguineo, char fator_rh, string especialidade, int nivel_de_seguranca)
+: funcionario(id, nome, cpf,idade, cpf, idade, tipo_sanguineo, fator_rh, especialidade, niv)
 {
 
 }

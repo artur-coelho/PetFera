@@ -1,6 +1,8 @@
 #ifndef _AVE_HPP_
 #define _AVE_HPP_
 
+#include "Animal.hpp"
+
 class Ave : public Animal {
 protected:
 	double m_tamanho_do_bico;

@@ -4,11 +4,11 @@ int Funcionario::get_m_id(void){
 	return m_id;
 }
 
-string Funcionario::get_m_nome(void){
+std::string Funcionario::get_m_nome(void){
 	return m_nome;
 }
 
-string Funcionario::get_m_cpf(void){
+std::string Funcionario::get_m_cpf(void){
 	return m_cpf;
 }
 
@@ -24,6 +24,6 @@ char Funcionario::get_m_fator_rh(void){
 	return m_fator_rh;
 }
 
-string Funcionario::get_m_especialidade(void);{
+std::string Funcionario::get_m_especialidade(void){
 	return m_especialidade;
 }
