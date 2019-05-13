@@ -1,8 +1,4 @@
-#include <iostream>
-
-using std::cout;
-using std::cin;
-using std::endl;
+#include "main.hpp"
 
 int main(){
     cout << "Estou vivo!" << endl;
