@@ -12,10 +12,10 @@ int Anfibio::get_m_total_de_mudas() {
 	return m_total_de_mudas;
 }
 
-void Anfibio::set_m_ultima_muda(date ultima_muda) {
+void Anfibio::set_m_ultima_muda(Date ultima_muda) {
 	m_ultima_muda = ultima_muda;
 }
 
-date Anfibio::get_m_ultima_muda() {
+Date Anfibio::get_m_ultima_muda() {
 	return m_ultima_muda;
 }
