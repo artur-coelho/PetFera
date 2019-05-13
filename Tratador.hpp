@@ -8,12 +8,12 @@
 class Tratador
 {
 private:
-	int m_nivel_de_segurança;
+	int m_nivel_de_seguranca;
 public:
-	int get_m_nivel_de_segurança();
-	void set_m_nivel_de_segurança(int niv);
+	int get_m_nivel_de_seguranca();
+	void set_m_nivel_de_seguranca(int niv);
 	
 	Tratador();
 	~Tratador();	
-}
+};
 #endif

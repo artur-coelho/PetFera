@@ -9,11 +9,11 @@
 class Veterinario
 {
 private:
-	string m_crmv;
+	std::string m_crmv;
 public:
-	string get_m_crmv();
-	void set_m_crmv(string crmv);
+	std::string get_m_crmv();
+	void set_m_crmv(std::string crmv);
 	Veterinario();
 	~Veterinario();	
-}
+};
 #endif
