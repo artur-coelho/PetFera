@@ -1,4 +1,4 @@
-#ifndef _FUNCOES_UTEIS_H
+#ifndef _FUNCOES_FUNCIONARIO_H
 #define _FUNCOES_UTEIS_H
 
 #include <iostream>
