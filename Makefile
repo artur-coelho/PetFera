@@ -8,36 +8,57 @@ CPP = ./src
 EXE = $(BIN)/pet_fera
 CC = g++
 CPPFLAGS = -O0 -Wall -std=c++11 -I$(HPP)
-OBJS = $(OBJ)/main.o $(OBJ)/Anfibio.o $(OBJ)/Animal.o $(OBJ)/Ave.o $(OBJ)/Funcionario.o $(OBJ)/Mamifero.o $(OBJ)/Reptil.o $(OBJ)/Tratador.o $(OBJ)/Veterinario.o
-# }
+OBJS = $(OBJ)/main.o $(OBJ)/Animal.o $(OBJ)/Funcionario.o $(OBJ)/Veterinario.o $(OBJ)/Tratador.o $(OBJ)/Anfibio.o $(OBJ)/Mamifero.o $(OBJ)/Reptil.o $(OBJ)/Ave.o $(OBJ)/AnimalSilvestre.o $(OBJ)/AnimalNativo.o $(OBJ)/AnimalExotico.o $(OBJ)/AnfibioNativo.o $(OBJ)/AnfibioExotico.o $(OBJ)/MamiferoNativo.o $(OBJ)/MamiferoExotico.o $(OBJ)/ReptilNativo.o $(OBJ)/ReptilExotico.o $(OBJ)/AveNativa.o $(OBJ)/AveExotico.o
 
 # gerar_executavel {
 $(EXE) : $(OBJS)
 	$(CC) -o $(EXE) $(OBJS)
-# }
+# } gerar_executavel
 
 # gerar_objetos {
 $(OBJ)/main.o :
 	$(CC) $(CPPFLAGS) -c $(CPP)/main.cpp -o $(OBJ)/main.o
-$(OBJ)/Anfibio.o :
-	$(CC) $(CPPFLAGS) -c $(CPP)/Anfibio.cpp -o $(OBJ)/Anfibio.o
 $(OBJ)/Animal.o :
 	$(CC) $(CPPFLAGS) -c $(CPP)/Animal.cpp -o $(OBJ)/Animal.o
-$(OBJ)/Ave.o :
-	$(CC) $(CPPFLAGS) -c $(CPP)/Ave.cpp -o $(OBJ)/Ave.o
 $(OBJ)/Funcionario.o :
 	$(CC) $(CPPFLAGS) -c $(CPP)/Funcionario.cpp -o $(OBJ)/Funcionario.o
+$(OBJ)/Veterinario.o :
+	$(CC) $(CPPFLAGS) -c $(CPP)/Veterinario.cpp -o $(OBJ)/Veterinario.o
+$(OBJ)/Tratador.o :
+	$(CC) $(CPPFLAGS) -c $(CPP)/Tratador.cpp -o $(OBJ)/Tratador.o
+$(OBJ)/Anfibio.o :
+	$(CC) $(CPPFLAGS) -c $(CPP)/Anfibio.cpp -o $(OBJ)/Anfibio.o
 $(OBJ)/Mamifero.o :
 	$(CC) $(CPPFLAGS) -c $(CPP)/Mamifero.cpp -o $(OBJ)/Mamifero.o
 $(OBJ)/Reptil.o :
 	$(CC) $(CPPFLAGS) -c $(CPP)/Reptil.cpp -o $(OBJ)/Reptil.o
-$(OBJ)/Tratador.o :
-	$(CC) $(CPPFLAGS) -c $(CPP)/Tratador.cpp -o $(OBJ)/Tratador.o
-$(OBJ)/Veterinario.o :
-	$(CC) $(CPPFLAGS) -c $(CPP)/Veterinario.cpp -o $(OBJ)/Veterinario.o
-# }
+$(OBJ)/Ave.o :
+	$(CC) $(CPPFLAGS) -c $(CPP)/Ave.cpp -o $(OBJ)/Ave.o
+$(OBJ)/AnimalSilvestre.o :
+	$(CC) $(CPPFLAGS) -c $(CPP)/AnimalSilvestre.cpp -o $(OBJ)/AnimalSilvestre.o
+$(OBJ)/AnimalNativo.o :
+	$(CC) $(CPPFLAGS) -c $(CPP)/AnimalNativo.cpp -o $(OBJ)/AnimalNativo.o
+$(OBJ)/AnimalExotico.o :
+	$(CC) $(CPPFLAGS) -c $(CPP)/AnimalExotico.cpp -o $(OBJ)/AnimalExotico.o
+$(OBJ)/AnfibioNativo.o :
+	$(CC) $(CPPFLAGS) -c $(CPP)/AnfibioNativo.cpp -o $(OBJ)/AnfibioNativo.o
+$(OBJ)/AnfibioExotico.o :
+	$(CC) $(CPPFLAGS) -c $(CPP)/AnfibioExotico.cpp -o $(OBJ)/AnfibioExotico.o
+$(OBJ)/MamiferoNativo.o :
+	$(CC) $(CPPFLAGS) -c $(CPP)/MamiferoNativo.cpp -o $(OBJ)/MamiferoNativo.o
+$(OBJ)/MamiferoExotico.o :
+	$(CC) $(CPPFLAGS) -c $(CPP)/MamiferoExotico.cpp -o $(OBJ)/MamiferoExotico.o
+$(OBJ)/ReptilNativo.o :
+	$(CC) $(CPPFLAGS) -c $(CPP)/ReptilNativo.cpp -o $(OBJ)/ReptilNativo.o
+$(OBJ)/ReptilExotico.o :
+	$(CC) $(CPPFLAGS) -c $(CPP)/ReptilExotico.cpp -o $(OBJ)/ReptilExotico.o
+$(OBJ)/AveNativo.o :
+	$(CC) $(CPPFLAGS) -c $(CPP)/AveNativo.cpp -o $(OBJ)/AveNativo.o
+$(OBJ)/AveExotico.o :
+	$(CC) $(CPPFLAGS) -c $(CPP)/AveExotico.cpp -o $(OBJ)/AveExotico.o
+# } gerar_objetos 
 
 # outras_funcionalidades {
 clean :
 	rm -f $(EXE) $(OBJS)
-# }
+# } outras_funcionalidades
