@@ -1,61 +1,61 @@
 #include "Funcionario.hpp"
 
 // getters {
-int get_m_id(void) {
+int Funcionario::get_m_id(void) {
 	m_id = id;
 }
 
-std::string get_m_nome(void) {
+std::string Funcionario::get_m_nome(void) {
 	m_nome = nome;
 }
 
-std::string get_m_cpf(void) {
+std::string Funcionario::get_m_cpf(void) {
 	m_cpf = cpf;
 }
 
-short get_m_idade(void) {
+short Funcionario::get_m_idade(void) {
 	m_idade = idade;
 }
 
-short get_m_tipo_sanguineo(void) {
+short Funcionario::get_m_tipo_sanguineo(void) {
 	m_tipo_sanguineo = tipo_sanguineo;
 }
 
-char get_m_fator_rh(void) {
+char Funcionario::get_m_fator_rh(void) {
 	m_fator_rh = fator_rh;
 }
 
-std::string get_m_especialidade(void) {
+std::string Funcionario::get_m_especialidade(void) {
 	m_especialidade = especialidade;
 }
 // } getters
 
 // setters {
-void set_m_id(int id) {
+void Funcionario::set_m_id(int id) {
 	m_id = id;
 }
 
-void set_m_nome(std::string nome) {
+void Funcionario::set_m_nome(std::string nome) {
 	m_nome = nome;
 }
 
-void set_m_cpf(std::string cpf) {
+void Funcionario::set_m_cpf(std::string cpf) {
 	m_cpf = cpf;
 }
 
-void set_m_idade(short idade) {
+void Funcionario::set_m_idade(short idade) {
 	m_idade = idade;
 }
 
-void set_m_tipo_sanguineo(short tipo_sanguineo) {
+void Funcionario::set_m_tipo_sanguineo(short tipo_sanguineo) {
 	m_tipo_sanguineo = tipo_sanguineo;
 }
 
-void set_m_fator_rh(char fator_rh) {
+void Funcionario::set_m_fator_rh(char fator_rh) {
 	m_fator_rh = fator_rh;
 }
 
-void set_m_especialidade(std::string especialidade) {
+void Funcionario::set_m_especialidade(std::string especialidade) {
 	m_especialidade = especialidade;
 }
 // } setters

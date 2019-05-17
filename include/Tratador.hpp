@@ -11,7 +11,7 @@ class Tratador : public Funcionario {
 		// } construtores e destrutores
 		
 		// getters {
-		int get m_nivel_de_seguranca(void);
+		int get_m_nivel_de_seguranca(void);
 		// } getters
 
 		// setters {

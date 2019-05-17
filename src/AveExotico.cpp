@@ -1,8 +1,8 @@
 #include "AveExotico.hpp"
 
 // construtores e destrutores {
-AveNativo() {}
-~AveNativo() {}
+AveExotico::AveNativo() {}
+AveExotico::~AveNativo() {}
 // } construtores e destrutores
 
 // getters {
