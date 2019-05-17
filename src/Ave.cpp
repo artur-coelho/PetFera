@@ -24,5 +24,3 @@ void Ave::set_m_envergadura_das_asas(double envergadura_das_asas) {
 	m_envergadura_das_asas = envergadura_das_asas;
 }
 // } setters
-
-#endif

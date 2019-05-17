@@ -10,5 +10,3 @@ ReptilNativo::~ReptilNativo() {}
 
 // setters {
 // } setters
-
-#endif

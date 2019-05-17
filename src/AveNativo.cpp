@@ -10,5 +10,3 @@ AveNativa::~AveNativo() {}
 
 // setters {
 // } setters
-
-#endif

@@ -24,5 +24,3 @@ void Reptil::set_m_tipo_veneno(std::string tipo_veneno) {
 	m_tipo_veneno = tipo_veneno;
 }
 // } setters
-
-#endif

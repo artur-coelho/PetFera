@@ -2,31 +2,31 @@
 
 // getters {
 int Funcionario::get_m_id(void) {
-	m_id = id;
+	return m_id;
 }
 
 std::string Funcionario::get_m_nome(void) {
-	m_nome = nome;
+	return m_nome;
 }
 
 std::string Funcionario::get_m_cpf(void) {
-	m_cpf = cpf;
+	return m_cpf;
 }
 
 short Funcionario::get_m_idade(void) {
-	m_idade = idade;
+	return m_idade;
 }
 
 short Funcionario::get_m_tipo_sanguineo(void) {
-	m_tipo_sanguineo = tipo_sanguineo;
+	return m_tipo_sanguineo;
 }
 
 char Funcionario::get_m_fator_rh(void) {
-	m_fator_rh = fator_rh;
+	return m_fator_rh;
 }
 
 std::string Funcionario::get_m_especialidade(void) {
-	m_especialidade = especialidade;
+	return m_especialidade;
 }
 // } getters
 
@@ -60,4 +60,3 @@ void Funcionario::set_m_especialidade(std::string especialidade) {
 }
 // } setters
 
-#endif

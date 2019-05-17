@@ -16,5 +16,3 @@ void Veterinario::set_m_crmv(std::string crmv) {
 	m_crmv = crmv;
 }
 // } setters
-
-#endif

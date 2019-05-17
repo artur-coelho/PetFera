@@ -16,5 +16,3 @@ void AnimalSilvestre::set_m_autorizacao_ibama(std::string autorizacao_ibama) {
 	m_autorizacao_ibama = autorizacao_ibama;
 }
 // } setters
-
-#endif

@@ -24,5 +24,3 @@ void AnimalNativo::set_m_autorizacao(std::string autorizacao) {
 	m_autorizacao = autorizacao;
 }
 // } setters
-
-#endif

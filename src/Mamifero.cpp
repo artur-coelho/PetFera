@@ -16,5 +16,3 @@ void std::string Mamifero::set_m_cor_pelo(std::string cor_pelo) {
 	m_cor_pelo = cor_pelo;
 }
 // } setters
-
-#endif

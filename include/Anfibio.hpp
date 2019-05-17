@@ -13,18 +13,18 @@ class Anfibio : Animal {
 		
 		// getters {
 		int get_m_total_de_mudas(void);
-		date get_ultima_muda(void);
+		Date get_m_ultima_muda(void);
 		// } getters
 
 		// setters {
 		void set_m_total_de_mudas(int total_de_mudas);
-		void set_m_ultima_muda(date ultima_muda);
+		void set_m_ultima_muda(Date ultima_muda);
 		// } setters
 
 	protected:
 		// membros {
 		int m_total_de_mudas;
-		date m_ultima_muda;
+		Date m_ultima_muda;
 		// } membros
 };
 

@@ -10,5 +10,3 @@ AveExotico::~AveNativo() {}
 
 // setters {
 // } setters
-
-#endif

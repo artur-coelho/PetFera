@@ -10,5 +10,3 @@ MamiferoNativo::~MamiferoNativo() {}
 
 // setters {
 // } setters
-
-#endif
