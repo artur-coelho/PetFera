@@ -1,18 +1,20 @@
-#include <iostream>
 #include "Veterinario.hpp"
 
-using namespace std;
+// contrutores e destrutores {
+Veterinario() {}
+~Veterinario() {}
+// } construtores e destrutores
 
-Veterinario::Veterinario(int id, string nome, string cpf, short idade, string tipo_sanguineo, char fator_rh, string especialidade, string crmv)
-: funcionario(id,nome,cpf,idade, cpf, idade, tipo_sanguineo, fator_rh, especialidade, niv)
-{
-
-}
-void set_m_crmv(string crmv)
-{
-	m_crmv = crmv;
-}
-string get_m_crmv()
-{
+// getters {
+std::string get_m_crmv(void) {
 	return m_crmv;
 }
+// } getters
+
+// setters {
+void set_m_crmv(std::string crmv) {
+	m_crmv = crmv;
+}
+// } setters
+
+#endif

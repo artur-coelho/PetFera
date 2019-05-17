@@ -1,21 +1,26 @@
 #include "Anfibio.hpp"
 
-Anfibio::Anfibio() : Animal() {/*Construtor padrão*/}
+// construtores e destrutores {
+Anfibio::Anfibio() {}
+Anfibio::~Anfibio() {}
+// } construtores e destrutores
 
-Anfibio::~Anfibio() { /*Destrutor*/ }
-
-void Anfibio::set_m_total_de_mudas(int total_de_mudas) {
-	m_total_de_mudas = total_de_mudas;
-}
-
-int Anfibio::get_m_total_de_mudas() {
+// getters {
+int get_m_total_de_mudas(void) {
 	return m_total_de_mudas;
 }
 
-void Anfibio::set_m_ultima_muda(Date ultima_muda) {
-	m_ultima_muda = ultima_muda;
+date get_ultima_muda(void) {
+	return ultima_muda;
+}
+// } getters
+
+// setters {
+void set_m_total_de_mudas(int total_de_mudas) {
+	m_total_de_mudas = total_de_mudas;
 }
 
-Date Anfibio::get_m_ultima_muda() {
-	return m_ultima_muda;
+void set_m_ultima_muda(date ultima_muda) {
+	m_ultima_muda = ultima_muda;
 }
+// } setters

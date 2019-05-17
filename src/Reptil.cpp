@@ -1,21 +1,28 @@
 #include "Reptil.hpp"
 
-Reptil::Reptil() : Animal() { /*Construtor padrão*/}
+// construtores e destrutores {
+Reptil() {}
+~Reptil() {}
+// } construtores e destrutores
 
-Reptil::~Reptil() { /* Destrutor */}
-
-void Reptil::set_m_venenoso(bool venenoso) {
-	m_venenoso = venenoso;
-}
-
-bool Reptil::get_m_venenoso() {
+// getters {
+bool get_m_venenoso(void) {
 	return m_venenoso;
 }
 
-void Reptil::set_m_tipo_veneno(std::string tipo_veneno) {
-	tipo_veneno = m_tipo_veneno;
-}
-
-std::string Reptil::get_m_tipo_veneno() {
+std::string get_m_tipo_veneno(void) {
 	return m_tipo_veneno;
 }
+// } getters
+
+// setters {
+void set_m_venenoso(bool venenoso) {
+	m_venenoso = venenoso;
+}
+
+void set_m_tipo_veneno(std::string tipo_veneno) {
+	m_tipo_veneno = tipo_veneno;
+}
+// } setters
+
+#endif
