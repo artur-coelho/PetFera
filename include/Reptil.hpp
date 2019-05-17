@@ -3,20 +3,28 @@
 
 #include "Animal.hpp"
 
-class Reptil : public Animal {
-protected:
-	bool m_venenoso;
-	std::string m_tipo_veneno;
+class Reptil : Animal {
+	public:
+		// construtores e destrutores {
+		Reptil();
+		~Reptil();
+		// } construtores e destrutores
+		
+		// getters {
+		bool get_m_venenoso(void);
+		std::string get_m_tipo_veneno(void);
+		// } getters
 
-public:
-	Reptil();
-	~Reptil();
+		// setters {
+		void set_m_venenoso(bool venenoso);
+		void set_m_tipo_veneno(std::string tipo_veneno);
+		// } setters
 
-	void set_m_venenoso(bool venenoso);
-	bool get_m_venenoso();
-	void set_m_tipo_veneno(std::string tipo_veneno);
-	std::string get_m_tipo_veneno();
-
+	protected:
+		// membros {
+		bool m_venenoso;
+		std::string m_tipo_veneno;
+		// } membros
 };
 
 #endif

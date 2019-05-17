@@ -1,19 +1,29 @@
-#ifndef _VETERINARIO_HPP
-#define _VETERINARIO_HPP
+#ifndef _VETERINARIO_HPP_
+#define _VETERINARIO_HPP_
 
-#include <iostream>
-#include <string>
 #include "Funcionario.hpp"
-#include "Animal.hpp"
 
-class Veterinario
-{
-private:
-	std::string m_crmv;
-public:
-	std::string get_m_crmv();
-	void set_m_crmv(std::string crmv);
-	Veterinario();
-	~Veterinario();	
+#include <string>
+
+class Veterinario : public Funcionario {
+	public:
+		// contrutores e destrutores {
+		Veterinario();
+		~Veterinario();
+		// } construtores e destrutores
+
+		// getters {
+		std::string get_m_crmv(void);
+		// } getters
+
+		// setters {
+		void set_m_crmv(std::string crmv);
+		// } setters
+
+	protected:
+		// membros {
+		std::string m_crmv;
+		// } membros
 };
+
 #endif

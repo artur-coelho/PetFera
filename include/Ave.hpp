@@ -3,18 +3,28 @@
 
 #include "Animal.hpp"
 
-class Ave : public Animal {
-protected:
-	double m_tamanho_do_bico;
-	double m_envergadura_das_asas;
-public:
-	Ave();
-	~Ave();
+class Ave : Animal {
+	public:
+		// construtores e destrutores {
+		Ave();
+		~Ave();	
+		// } construtores e destrutores
+		
+		// getters {
+		double get_m_tamanho_do_bico_cm(void);
+		double get_m_envergadura_das_asas(void);
+		// } getters
 
-	void set_m_tamanho_do_bico(double tamanho_do_bico);
-	double get_m_tamanho_do_bico();
-	void set_m_envergadura_das_asas(double envergadura_das_asas);
-	double get_m_envergadura_das_asas();
+		// setters {
+		void set_m_tamanho_do_bico_cm(double tamanho_do_bico_cm);
+		void set_m_envergadura_das_asas(double envergadura_das_asas);
+		// } setters
+
+	protected:
+		// membros {
+		double m_tamanho_do_bico_cm;
+		double m_envergadura_das_asas;
+		// } membros
 };
 
 #endif
