@@ -1,5 +1,5 @@
-#ifndef _TRATADOR_HPP_
-#define _TRATADOR_HPP_
+#ifndef _MAMIFERO_HPP_
+#define _MAMIFERO_HPP_
 
 #include "Animal.hpp"
 
@@ -17,7 +17,7 @@ class Mamifero : public Animal{
 		// } getters
 
 		// setters {
-		void std::string set_m_cor_pelo(std::string cor_pelo);
+		void set_m_cor_pelo(std::string cor_pelo);
 		// } setters
 
 	protected:

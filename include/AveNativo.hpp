@@ -2,7 +2,7 @@
 #define _AVE_NATIVO_HPP_ 
 
 #include "Ave.hpp"
-#include "AnimalNativo"
+#include "AnimalNativo.hpp"
 
 class AveNativo : public Ave, AnimalNativo {
 	public:

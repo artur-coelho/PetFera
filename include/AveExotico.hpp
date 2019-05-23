@@ -4,11 +4,11 @@
 #include "Ave.hpp"
 #include "AnimalExotico.hpp"
 
-class Tratador {
+class AveExotico : public Ave, AnimalExotico {
 	public:
 		// construtores e destrutores {
-		AveNativo();
-		~AveNativo();
+		AveExotico();
+		~AveExotico();
 		// } construtores e destrutores
 		
 		// getters {

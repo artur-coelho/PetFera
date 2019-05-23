@@ -12,7 +12,7 @@ std::string Mamifero::get_m_cor_pelo(void) {
 // } getters
 
 // setters {
-void std::string Mamifero::set_m_cor_pelo(std::string cor_pelo) {
+void Mamifero::set_m_cor_pelo(std::string cor_pelo) {
 	m_cor_pelo = cor_pelo;
 }
 // } setters

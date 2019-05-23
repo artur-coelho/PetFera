@@ -1,5 +1,5 @@
-#ifndef _TRATADOR_HPP_
-#define _TRATADOR_HPP_
+#ifndef _MAMIFERO_EXOTICO_HPP_
+#define _MAMIFERO_EXOTICO_HPP_
 
 #include "Mamifero.hpp"
 #include "AnimalExotico.hpp"

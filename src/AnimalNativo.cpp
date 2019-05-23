@@ -1,8 +1,8 @@
 #include "AnimalNativo.hpp"
 
 // construtores e destrutores {
-AnimalNativo::AnimalNativo();
-AnimalNativo::~AnimalNativo();
+AnimalNativo::AnimalNativo() {}
+AnimalNativo::~AnimalNativo() {}
 // } construtores e destrutores
 
 // getters {

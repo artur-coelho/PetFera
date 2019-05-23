@@ -1,8 +1,8 @@
-#include "AveNativa.hpp"
+#include "AveNativo.hpp"
 
 // construtores e destrutores {
-AveNativa::AveNativo() {}
-AveNativa::~AveNativo() {}
+AveNativo::AveNativo() {}
+AveNativo::~AveNativo() {}
 // } construtores e destrutores
 
 // getters {

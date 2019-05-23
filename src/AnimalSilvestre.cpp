@@ -1,8 +1,8 @@
 #include "AnimalSilvestre.hpp"
 
 // construtores e destrutores {
-AnimalSilvestre::AnimalSilvestre();
-AnimalSilvestre::~AnimalSilvestre();
+AnimalSilvestre::AnimalSilvestre() {}
+AnimalSilvestre::~AnimalSilvestre() {}
 // } construtores e destrutores
 
 // getters {

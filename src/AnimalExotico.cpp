@@ -1,8 +1,8 @@
 #include "AnimalExotico.hpp"
 
 // construtores e destrutores {
-AnimalExotico::AnimalExotico();
-AnimalExotico::~AnimalExotico();
+AnimalExotico::AnimalExotico() {}
+AnimalExotico::~AnimalExotico() {}
 // } construtores e destrutores
 
 // getters {

@@ -14,7 +14,7 @@ class AnimalNativo : public AnimalSilvestre {
 		
 		// getters {
 		std::string get_m_uf_origem(void);
-		std::string get_m_autorizacao(void)
+		std::string get_m_autorizacao(void);
 		// } getters
 
 		// setters {
