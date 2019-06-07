@@ -5,4 +5,10 @@
 #include <string>
 #include <vector>
 
+#include "Funcionario.hpp"
+#include "Animal.hpp"
+#include "Tratador.hpp"
+#include "Veterinario.hpp"
+#include "Anfibio.hpp"
+
 #endif

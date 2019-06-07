@@ -2,6 +2,11 @@
 
 // construtores e destrutores {
 Reptil::Reptil() {}
+Reptil::Reptil(int id, std::string classe, std::string nome_cientifico,
+		 	   char sexo, double tamanho, std::string dieta, Veterinario veterinario,
+		 	   Tratador tratador, std::string nome_batismo, bool venenoso, std::string tipo_veneno) : 
+			   Animal(id, classe, nome_cientifico, sexo, tamanho, dieta, veterinario,
+		 	   tratador, nome_batismo), m_venenoso(venenoso), m_tipo_veneno(tipo_veneno) { }
 Reptil::~Reptil() {}
 // } construtores e destrutores
 

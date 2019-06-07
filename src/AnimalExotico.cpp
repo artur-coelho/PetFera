@@ -2,6 +2,8 @@
 
 // construtores e destrutores {
 AnimalExotico::AnimalExotico() {}
+AnimalExotico::AnimalExotico(std::string autorizacao_ibama, std::string pais_origem) :
+							AnimalSilvestre(autorizacao_ibama), m_pais_origem(pais_origem) { }
 AnimalExotico::~AnimalExotico() {}
 // } construtores e destrutores
 

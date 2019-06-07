@@ -7,6 +7,7 @@ class AnimalSilvestre {
 	public:
 		// construtores e destrutores {
 		AnimalSilvestre();
+		AnimalSilvestre(std::string autorizacao_ibama);
 		~AnimalSilvestre();
 		// } construtores e destrutores
 		

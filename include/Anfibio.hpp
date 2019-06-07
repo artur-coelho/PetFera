@@ -8,6 +8,9 @@ class Anfibio : Animal {
 	public:
 		// construtores e destrutores {
 		Anfibio();
+		Anfibio(int id, std::string classe, std::string nome_cientifico,
+		 	   char sexo, double tamanho, std::string dieta, Veterinario veterinario,
+		 	   Tratador tratador, std::string nome_batismo, int total_de_mudas, Date ultima_muda);
 		~Anfibio();
 		// } construtores e destrutores
 		

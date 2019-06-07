@@ -1,5 +1,14 @@
 #include "Funcionario.hpp"
 
+//construtores e destrutores {
+		Funcionario::Funcionario(){ }
+		Funcionario::Funcionario(int id, std::string nome, std::string cpf, short idade, 
+					short tipo_sanguineo, char fator_rh, std::string especialidade) : 
+					m_id(id), m_nome(nome), m_cpf(cpf), m_idade(idade), m_tipo_sanguineo(tipo_sanguineo),
+					m_fator_rh(fator_rh), m_especialidade(especialidade) { }
+		Funcionario::~Funcionario(){ }
+		//	} construtores e destrutores
+
 // getters {
 int Funcionario::get_m_id(void) {
 	return m_id;

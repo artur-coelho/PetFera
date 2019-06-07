@@ -10,6 +10,9 @@ class Animal {
 	public:
 		// construtores e destrutores {
 		Animal();
+		Animal(int id, std::string classe, std::string nome_cientifico,
+		 	   char sexo, double tamanho, std::string dieta, Veterinario veterinario,
+		 	   Tratador tratador, std::string nome_batismo);
 		~Animal();
 		// } construtores e destrutores
 		// getters {

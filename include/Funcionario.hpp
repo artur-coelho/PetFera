@@ -5,6 +5,13 @@
 
 class Funcionario {
 	public:
+		//construtores e destrutores {
+		Funcionario();
+		Funcionario(int id, std::string nome, std::string cpf, short idade, 
+					short tipo_sanguineo, char fator_rh, std::string especialidade);
+		~Funcionario();
+		//	} construtores e destrutores
+
 		// getters {
 		int get_m_id(void);
 		std::string get_m_nome(void);

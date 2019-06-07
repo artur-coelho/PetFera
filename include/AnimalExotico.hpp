@@ -9,6 +9,7 @@ class AnimalExotico : public AnimalSilvestre {
 	public:
 		// construtores e destrutores {
 		AnimalExotico();
+		AnimalExotico(std::string autorizacao_ibama, std::string pais_origem);
 		~AnimalExotico();
 		// } construtores e destrutores
 		

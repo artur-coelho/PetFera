@@ -9,6 +9,7 @@ class AnimalNativo : public AnimalSilvestre {
 	public:
 		// construtores e destrutores {
 		AnimalNativo();
+		AnimalNativo(std::string autorizacao_ibama, std::string uf_origem, std::string autorizacao);
 		~AnimalNativo();
 		// } construtores e destrutores
 		

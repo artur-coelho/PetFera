@@ -7,6 +7,10 @@ class Ave : Animal {
 	public:
 		// construtores e destrutores {
 		Ave();
+		Ave(int id, std::string classe, std::string nome_cientifico,
+		 	   char sexo, double tamanho, std::string dieta, Veterinario veterinario,
+		 	   Tratador tratador, std::string nome_batismo, double tamanho_do_bico_cm, 
+		 	   double envergadura_das_asas);
 		~Ave();	
 		// } construtores e destrutores
 		

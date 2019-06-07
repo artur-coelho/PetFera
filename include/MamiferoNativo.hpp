@@ -8,6 +8,10 @@ class MamiferoNativo : public Mamifero, AnimalNativo {
 	public:
 		// construtores e destrutores {
 		MamiferoNativo();
+		MamiferoNativo(int id, std::string classe, std::string nome_cientifico,
+		 	   char sexo, double tamanho, std::string dieta, Veterinario veterinario,
+		 	   Tratador tratador, std::string nome_batismo, std::string cor_pelo,
+		 	   std::string autorizacao_ibama, std::string uf_origem, std::string autorizacao);
 		~MamiferoNativo();
 		// } construtores e destrutores
 		

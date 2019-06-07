@@ -9,6 +9,9 @@ class Mamifero : public Animal{
 	public:
 		// construtores e destrutores {
 		Mamifero();
+		Mamifero(int id, std::string classe, std::string nome_cientifico,
+		 	   char sexo, double tamanho, std::string dieta, Veterinario veterinario,
+		 	   Tratador tratador, std::string nome_batismo, std::string cor_pelo);
 		~Mamifero();
 		// } construtores e destrutores
 		

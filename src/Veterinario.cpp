@@ -2,6 +2,11 @@
 
 // contrutores e destrutores {
 Veterinario::Veterinario() {}
+Veterinario::Veterinario(int id, std::string nome, std::string cpf, short idade, 
+						short tipo_sanguineo, char fator_rh, std::string especialidade,
+						std::string crmv) : 
+						Funcionario(id, nome, cpf, idade, tipo_sanguineo,
+						fator_rh, especialidade), m_crmv(crmv) { }
 Veterinario::~Veterinario() {}
 // } construtores e destrutores
 
