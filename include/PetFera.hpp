@@ -11,8 +11,10 @@
 
 class PetFera {
 	public:
-		void cadastrar();
-		void remover();
+		void cadastrar(Animal& novo_animal);
+		void cadastrar(Funcionario& novo_funcionario);
+		void remover(Animal& animal_eliminado);
+		void remover(Funcionario& funcionario_eliminado);
 		void alterar();
 		void consultar();
 		void salvar();
