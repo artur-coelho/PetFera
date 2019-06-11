@@ -15,7 +15,7 @@ class PetFera {
 		void cadastrar(Funcionario& novo_funcionario);
 		void remover(Animal& animal_eliminado);
 		void remover(Funcionario& funcionario_eliminado);
-		void alterar();
+		void alterar(int id, char baseDados); // baseDados: (f)uncionarios (a)nimais
 		void consultar();
 		void salvar();
 	private:

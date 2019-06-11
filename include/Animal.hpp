@@ -39,6 +39,9 @@ class Animal {
 		void set_m_nome_batismo(std::string nome_batismo);
 		// } setters
 
+		virtual void escreverEmArquivo();
+		virtual void alterarDado();
+
 	protected:
 		// membros {
 		int m_id;

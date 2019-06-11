@@ -32,6 +32,9 @@ class Funcionario {
 		void set_m_especialidade(std::string especialidade);
 		// } setters
 
+		virtual void escreverEmArquivo();
+		virtual void alterarDado();
+
 	protected:
 		// membros {
 		int m_id;

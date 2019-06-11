@@ -8,7 +8,7 @@ CPP = ./src
 EXE = $(BIN)/pet_fera
 CC = g++
 CPPFLAGS = -O0 -Wall -std=c++11 -I$(HPP)
-OBJS = $(OBJ)/main.o $(OBJ)/Animal.o $(OBJ)/Funcionario.o $(OBJ)/Veterinario.o $(OBJ)/Tratador.o $(OBJ)/Anfibio.o $(OBJ)/Mamifero.o $(OBJ)/Reptil.o $(OBJ)/Ave.o $(OBJ)/AnimalSilvestre.o $(OBJ)/AnimalNativo.o $(OBJ)/AnimalExotico.o $(OBJ)/AnfibioNativo.o $(OBJ)/AnfibioExotico.o $(OBJ)/MamiferoNativo.o $(OBJ)/MamiferoExotico.o $(OBJ)/ReptilNativo.o $(OBJ)/ReptilExotico.o $(OBJ)/AveNativo.o $(OBJ)/AveExotico.o $(OBJ)/PetFera.o $(OBJ)/Interface.o
+OBJS = $(OBJ)/main.o $(OBJ)/Animal.o $(OBJ)/Funcionario.o $(OBJ)/Veterinario.o $(OBJ)/Tratador.o $(OBJ)/Anfibio.o $(OBJ)/Mamifero.o $(OBJ)/Reptil.o $(OBJ)/Ave.o $(OBJ)/AnimalSilvestre.o $(OBJ)/AnimalNativo.o $(OBJ)/AnimalExotico.o $(OBJ)/AnfibioNativo.o $(OBJ)/AnfibioExotico.o $(OBJ)/MamiferoNativo.o $(OBJ)/MamiferoExotico.o $(OBJ)/ReptilNativo.o $(OBJ)/ReptilExotico.o $(OBJ)/AveNativo.o $(OBJ)/AveExotico.o $(OBJ)/PetFera.o
 # } variáveis para evitar repetição de código
 
 # gerar_executavel {
@@ -19,8 +19,6 @@ $(EXE) : $(OBJS)
 # gerar_objetos {
 $(OBJ)/main.o : $(CPP)/main.cpp
 	$(CC) $(CPPFLAGS) -c $(CPP)/main.cpp -o $(OBJ)/main.o
-$(OBJ)/Interface.o : $(CPP)/Interface.cpp
-	$(CC) $(CPPFLAGS) -c $(CPP)/Interface.cpp -o $(OBJ)/Interface.o
 $(OBJ)/PetFera.o : $(CPP)/PetFera.cpp
 	$(CC) $(CPPFLAGS) -c $(CPP)/PetFera.cpp -o $(OBJ)/PetFera.o
 $(OBJ)/Animal.o : $(CPP)/Animal.cpp
