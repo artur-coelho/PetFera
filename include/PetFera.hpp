@@ -5,7 +5,9 @@
 #include "Funcionario.hpp"
 
 #include <map>
+#include <vector>
 #include <iostream>
+#include <string>
 
 class PetFera {
 	public:
