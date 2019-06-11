@@ -1,5 +1,5 @@
 #ifndef _ANFIBIO_HPP_
-#define _ANFIBIO_HPP__
+#define _ANFIBIO_HPP_
 
 #include "Animal.hpp"
 #include "Tempo.hpp"
