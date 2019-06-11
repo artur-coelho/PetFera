@@ -6,8 +6,4 @@ A edição vai ficar sob responsabilidade de cada classe de se editar
 Pelo visto os arquivos vão ter que ser individualizados, pois cada classe vai cuidar do seu
 O próprio PetFera é a interface, não precisando de outra.
 
-Dúvida:
-Classes virtuais não podem ser instanciadas, então como faço meus upcasting/downcasting ?
-
-
 
