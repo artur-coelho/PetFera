@@ -21,6 +21,9 @@ class Tratador : public Funcionario {
 		void set_m_nivel_de_seguranca(int nivel_de_seguranca);
 		// } setters
 
+		void escreverEmArquivo();
+		void alterarDado();
+
 	protected:
 		// membros {
 		int m_nivel_de_seguranca;

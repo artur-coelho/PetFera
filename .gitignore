@@ -1,3 +1,2 @@
-# Para não comitar modificações de objetos
-./bin/*
-./build/*
+bin/
+build/

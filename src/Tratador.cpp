@@ -21,3 +21,11 @@ void Tratador::set_m_nivel_de_seguranca(int nivel_de_seguranca) {
 	m_nivel_de_seguranca = nivel_de_seguranca;
 }
 // } setters
+
+void escreverEmArquivo() {
+	return;
+}
+
+void alterarDado() {
+	return;
+}

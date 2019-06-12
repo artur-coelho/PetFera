@@ -22,6 +22,9 @@ class Veterinario : public Funcionario {
 		// setters {
 		void set_m_crmv(std::string crmv);
 		// } setters
+		
+		void escreverEmArquivo();
+		void alterarDado();
 
 	protected:
 		// membros {
