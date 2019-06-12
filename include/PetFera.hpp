@@ -1,4 +1,4 @@
-#ifndef _PETFERA_HPP_
+	#ifndef _PETFERA_HPP_
 #define _PETFERA_HPP_
 
 #include "Animal.hpp"
@@ -11,17 +11,16 @@
 
 class PetFera {
 	public:
-		void cadastrar(Animal& novo_animal);
-		void cadastrar(Funcionario& novo_funcionario);
-		void remover(Animal& animal_eliminado);
-		void remover(Funcionario& funcionario_eliminado);
+		void cadastrar(Animal* novo_animal);
+		void cadastrar(Funcionario* novo_funcionario);
+		void remover(Animal* animal_eliminado);
+		void remover(Funcionario* funcionario_eliminado);
 		void alterar(int id, char baseDados); // baseDados: (f)uncionarios (a)nimais
 		void consultar();
 		void salvar();
 	private:
-		std::map<int, Funcionario> funcionarios;
-		std::map<int, Animal> animais;
+		std::map<int, Funcionario*> funcionarios;
+		std::map<int, Animal*> animais;
 };
 
 #endif
-
