@@ -23,10 +23,10 @@ void Veterinario::set_m_crmv(std::string crmv) {
 // } setters
 
 
-void escreverEmArquivo() {
+void Veterinario::escreverEmArquivo() {
 	return;
 }
 
-void alterarDado() {
+void Veterinario::alterarDado() {
 	return;
 }

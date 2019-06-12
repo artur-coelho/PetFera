@@ -22,10 +22,10 @@ void Tratador::set_m_nivel_de_seguranca(int nivel_de_seguranca) {
 }
 // } setters
 
-void escreverEmArquivo() {
+void Tratador::escreverEmArquivo() {
 	return;
 }
 
-void alterarDado() {
+void Tratador::alterarDado() {
 	return;
 }
