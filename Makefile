@@ -1,67 +1,29 @@
 # makefile para o projeto "Pet Fera"
 
 # variáveis para evitar repetição de código {
-OBJ = ./build
-BIN = ./bin
-HPP = ./include
-CPP = ./src
-EXE = $(BIN)/pet_fera
+EXEC_NAME = pet_fera
+EXEC_DIR = ./bin
+OBJ_DIR = ./build
+INC_DIR = ./include
+SRC_DIR = ./src
+EXEC = $(EXEC_DIR)/$(EXEC_NAME)
+
 CC = g++
-CPPFLAGS = -O0 -Wall -std=c++11 -I$(HPP)
-OBJS = $(OBJ)/main.o $(OBJ)/Animal.o $(OBJ)/Funcionario.o $(OBJ)/Veterinario.o $(OBJ)/Tratador.o $(OBJ)/Anfibio.o $(OBJ)/Mamifero.o $(OBJ)/Reptil.o $(OBJ)/Ave.o $(OBJ)/AnimalSilvestre.o $(OBJ)/AnimalNativo.o $(OBJ)/AnimalExotico.o $(OBJ)/AnfibioNativo.o $(OBJ)/AnfibioExotico.o $(OBJ)/MamiferoNativo.o $(OBJ)/MamiferoExotico.o $(OBJ)/ReptilNativo.o $(OBJ)/ReptilExotico.o $(OBJ)/AveNativo.o $(OBJ)/AveExotico.o $(OBJ)/PetFera.o $(OBJ)/Date.o
+CPPFLAGS = -O0 -Wall -std=c++11 -I$(INC_DIR)
+
+OBJS = $(OBJ_DIR)/main.o $(OBJ_DIR)/Animal.o $(OBJ_DIR)/Funcionario.o $(OBJ_DIR)/Veterinario.o $(OBJ_DIR)/Tratador.o $(OBJ_DIR)/Anfibio.o $(OBJ_DIR)/Mamifero.o $(OBJ_DIR)/Reptil.o $(OBJ_DIR)/Ave.o $(OBJ_DIR)/AnimalSilvestre.o $(OBJ_DIR)/AnimalNativo.o $(OBJ_DIR)/AnimalExotico.o $(OBJ_DIR)/AnfibioNativo.o $(OBJ_DIR)/AnfibioExotico.o $(OBJ_DIR)/MamiferoNativo.o $(OBJ_DIR)/MamiferoExotico.o $(OBJ_DIR)/ReptilNativo.o $(OBJ_DIR)/ReptilExotico.o $(OBJ_DIR)/AveNativo.o $(OBJ_DIR)/AveExotico.o $(OBJ_DIR)/PetFera.o $(OBJ_DIR)/Date.o
 # } variáveis para evitar repetição de código
 
-# gerar_executavel {
-$(EXE) : $(OBJS)
-	$(CC) -o $(EXE) $(OBJS)
-# } gerar_executavel
-
 # gerar_objetos {
-$(OBJ)/main.o : $(CPP)/main.cpp
-	$(CC) $(CPPFLAGS) -c $(CPP)/main.cpp -o $(OBJ)/main.o
-$(OBJ)/PetFera.o : $(CPP)/PetFera.cpp
-	$(CC) $(CPPFLAGS) -c $(CPP)/PetFera.cpp -o $(OBJ)/PetFera.o
-$(OBJ)/Animal.o : $(CPP)/Animal.cpp
-	$(CC) $(CPPFLAGS) -c $(CPP)/Animal.cpp -o $(OBJ)/Animal.o
-$(OBJ)/Funcionario.o : $(CPP)/Funcionario.cpp
-	$(CC) $(CPPFLAGS) -c $(CPP)/Funcionario.cpp -o $(OBJ)/Funcionario.o
-$(OBJ)/Veterinario.o : $(CPP)/Veterinario.cpp
-	$(CC) $(CPPFLAGS) -c $(CPP)/Veterinario.cpp -o $(OBJ)/Veterinario.o
-$(OBJ)/Tratador.o : $(CPP)/Tratador.cpp
-	$(CC) $(CPPFLAGS) -c $(CPP)/Tratador.cpp -o $(OBJ)/Tratador.o
-$(OBJ)/Anfibio.o : $(CPP)/Anfibio.cpp
-	$(CC) $(CPPFLAGS) -c $(CPP)/Anfibio.cpp -o $(OBJ)/Anfibio.o
-$(OBJ)/Mamifero.o : $(CPP)/Mamifero.cpp
-	$(CC) $(CPPFLAGS) -c $(CPP)/Mamifero.cpp -o $(OBJ)/Mamifero.o
-$(OBJ)/Reptil.o : $(CPP)/Reptil.cpp
-	$(CC) $(CPPFLAGS) -c $(CPP)/Reptil.cpp -o $(OBJ)/Reptil.o
-$(OBJ)/Ave.o : $(CPP)/Ave.cpp
-	$(CC) $(CPPFLAGS) -c $(CPP)/Ave.cpp -o $(OBJ)/Ave.o
-$(OBJ)/AnimalSilvestre.o : $(CPP)/AnimalSilvestre.cpp
-	$(CC) $(CPPFLAGS) -c $(CPP)/AnimalSilvestre.cpp -o $(OBJ)/AnimalSilvestre.o
-$(OBJ)/AnimalNativo.o : $(CPP)//AnimalNativo.cpp
-	$(CC) $(CPPFLAGS) -c $(CPP)/AnimalNativo.cpp -o $(OBJ)/AnimalNativo.o
-$(OBJ)/AnimalExotico.o : $(CPP)/AnimalExotico.cpp
-	$(CC) $(CPPFLAGS) -c $(CPP)/AnimalExotico.cpp -o $(OBJ)/AnimalExotico.o
-$(OBJ)/AnfibioNativo.o : $(CPP)/AnfibioNativo.cpp
-	$(CC) $(CPPFLAGS) -c $(CPP)/AnfibioNativo.cpp -o $(OBJ)/AnfibioNativo.o
-$(OBJ)/AnfibioExotico.o : $(CPP)/AnfibioExotico.cpp
-	$(CC) $(CPPFLAGS) -c $(CPP)/AnfibioExotico.cpp -o $(OBJ)/AnfibioExotico.o
-$(OBJ)/MamiferoNativo.o : $(CPP)/MamiferoNativo.cpp
-	$(CC) $(CPPFLAGS) -c $(CPP)/MamiferoNativo.cpp -o $(OBJ)/MamiferoNativo.o
-$(OBJ)/MamiferoExotico.o : $(CPP)/MamiferoExotico.cpp
-	$(CC) $(CPPFLAGS) -c $(CPP)/MamiferoExotico.cpp -o $(OBJ)/MamiferoExotico.o
-$(OBJ)/ReptilNativo.o : $(CPP)/ReptilNativo.cpp
-	$(CC) $(CPPFLAGS) -c $(CPP)/ReptilNativo.cpp -o $(OBJ)/ReptilNativo.o
-$(OBJ)/ReptilExotico.o : $(CPP)/ReptilExotico.cpp
-	$(CC) $(CPPFLAGS) -c $(CPP)/ReptilExotico.cpp -o $(OBJ)/ReptilExotico.o
-$(OBJ)/AveNativo.o : $(CPP)/AveNativo.cpp
-	$(CC) $(CPPFLAGS) -c $(CPP)/AveNativo.cpp -o $(OBJ)/AveNativo.o
-$(OBJ)/AveExotico.o : $(CPP)/AveExotico.cpp
-	$(CC) $(CPPFLAGS) -c $(CPP)/AveExotico.cpp -o $(OBJ)/AveExotico.o
-$(OBJ)/Date.o : $(CPP)/Date.cpp
-	$(CC) $(CPPFLAGS) -c $(CPP)/Date.cpp -o $(OBJ)/Date.o
+$(OBJ_DIR)/%.o : $(SRC_DIR)/%.cpp
+	$(CC) $< -o $@ -c $(CPPFLAGS)
+
 # } gerar_objetos 
+
+# gerar_executavel {
+$(EXEC) : $(OBJS)
+	$(CC) $^ -o $@
+# } gerar_executavel
 
 # outras_funcionalidades {
 .PHONY : clean

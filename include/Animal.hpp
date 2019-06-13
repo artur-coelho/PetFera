@@ -10,13 +10,13 @@
 
 class Animal {
 	private:
-//		virtual std::ostream& print(std::ostream&) const = 0;
+		virtual std::ostream& print(std::ostream&) const = 0;
 	public:
 		// construtores e destrutores {
 		Animal();
 		Animal(int id, std::string classe, std::string nome_cientifico,
-		 	   char sexo, double tamanho, std::string dieta, Veterinario veterinario,
-		 	   Tratador tratador, std::string nome_batismo);
+		 	   char sexo, double tamanho, std::string dieta, Veterinario* veterinario,
+		 	   Tratador* tratador, std::string nome_batismo);
 		~Animal();
 		// } construtores e destrutores
 		// getters {
@@ -26,8 +26,8 @@ class Animal {
 		char get_m_sexo(void);
 		double get_m_tamanho(void);
 		std::string get_m_dieta(void);
-		Veterinario get_m_veterinario(void);
-		Tratador get_m_tratador(void);
+		Veterinario* get_m_veterinario(void);
+		Tratador* get_m_tratador(void);
 		std::string get_m_nome_batismo(void);
 		// } getters
 
@@ -38,18 +38,18 @@ class Animal {
 		void set_m_sexo(char sexo);
 		void set_m_tamanho(double tamanho);
 		void set_m_dieta(std::string dieta);
-		void set_m_veterinario(Veterinario veterinario);
-		void set_m_tratador(Tratador tratador);
+		void set_m_veterinario(Veterinario* veterinario);
+		void set_m_tratador(Tratador* tratador);
 		void set_m_nome_batismo(std::string nome_batismo);
 		// } setters
 
 		virtual void escreverEmArquivo() = 0;
 		virtual void alterarDado() = 0;
-//		virtual void imprimeAnimal() = 0;
+		virtual void imprimeAnimal() = 0;
 		//operadores
-//		friend std::ostream& operator<<(std::ostream& os, const Animal& animal) {
-//			return animal.print(os);
-//		}
+		friend std::ostream& operator<<(std::ostream& os, const Animal& animal) {
+			return animal.print(os);
+		}
 
 	protected:
 		// membros {
@@ -59,8 +59,8 @@ class Animal {
 		char m_sexo;
 		double m_tamanho;
 		std::string m_dieta;
-		Veterinario m_veterinario;
-		Tratador m_tratador;
+		Veterinario* m_veterinario;
+		Tratador* m_tratador;
 		std::string m_nome_batismo;
 		// } membros
 };

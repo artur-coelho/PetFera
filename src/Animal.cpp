@@ -3,8 +3,8 @@
 // construtores e destrutores {
 Animal::Animal() {}
 Animal::Animal(int id, std::string classe, std::string nome_cientifico, char sexo,
-			   double tamanho, std::string dieta, Veterinario veterinario,
-		 	   Tratador tratador, std::string nome_batismo) : 
+			   double tamanho, std::string dieta, Veterinario* veterinario,
+		 	   Tratador* tratador, std::string nome_batismo) : 
 				m_id(id), m_classe(classe), m_nome_cientifico(nome_cientifico),
 				m_sexo(sexo), m_tamanho(tamanho), m_dieta(dieta), m_veterinario(veterinario),
 				m_tratador(tratador), m_nome_batismo(nome_batismo) { } 
@@ -36,11 +36,11 @@ std::string Animal::get_m_dieta(void) {
 	return m_dieta;
 }
 
-Veterinario Animal::get_m_veterinario(void) {
+Veterinario* Animal::get_m_veterinario(void) {
 	return m_veterinario;
 }
 
-Tratador Animal::get_m_tratador(void) {
+Tratador* Animal::get_m_tratador(void) {
 	return m_tratador;
 }
 
@@ -74,11 +74,11 @@ void Animal::set_m_dieta(std::string dieta) {
 	m_dieta = dieta;
 }
 
-void Animal::set_m_veterinario(Veterinario veterinario) {
+void Animal::set_m_veterinario(Veterinario* veterinario) {
 	m_veterinario = veterinario;
 }
 
-void Animal::set_m_tratador(Tratador tratador) {
+void Animal::set_m_tratador(Tratador* tratador) {
 	m_tratador = tratador;
 }
 

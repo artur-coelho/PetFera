@@ -4,8 +4,10 @@
 #include "Animal.hpp"
 #include "Date.hpp"
 
+using std::endl;
+
 class Anfibio : public Animal {
-/*	private:
+	private:
 		std::ostream& print(std::ostream& os) const {
 			return os << "ID: " << m_id << endl
 					  << "Classe: " << m_classe << endl
@@ -18,13 +20,13 @@ class Anfibio : public Animal {
 					  << "Nome de Batismo: " << m_nome_batismo << endl
 					  << "Total de mudas: " << m_total_de_mudas << endl
 					  << "Última muda: " << m_ultima_muda << endl;
-		} */
+		} 
 	public:
 		// construtores e destrutores {
 		Anfibio();
 		Anfibio(int id, std::string classe, std::string nome_cientifico,
-		 	   char sexo, double tamanho, std::string dieta, Veterinario veterinario,
-		 	   Tratador tratador, std::string nome_batismo, int total_de_mudas, Date ultima_muda);
+		 	   char sexo, double tamanho, std::string dieta, Veterinario* veterinario,
+		 	   Tratador* tratador, std::string nome_batismo, int total_de_mudas, Date ultima_muda);
 		~Anfibio();
 		// } construtores e destrutores
 		
@@ -38,7 +40,7 @@ class Anfibio : public Animal {
 		void set_m_ultima_muda(Date ultima_muda);
 		// } setters
 
-//		void imprimeAnimal();
+		void imprimeAnimal();
 
 	protected:
 		// membros {
