@@ -4,6 +4,8 @@
 #include "Veterinario.hpp"
 #include "Tratador.hpp"
 
+#include <iostream>
+#include <fstream>
 #include <string>
 
 class Animal {

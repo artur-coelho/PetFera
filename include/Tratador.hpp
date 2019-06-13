@@ -8,7 +8,7 @@ class Tratador : public Funcionario {
 		// construtores e destrutores {
 		Tratador();
 		Tratador(int id, std::string nome, std::string cpf, short idade, 
-				short tipo_sanguineo, char fator_rh, std::string especialidade,
+				std::string tipo_sanguineo, char fator_rh, std::string especialidade,
 				int nivel_de_seguranca);
 		~Tratador();
 		// } construtores e destrutores

@@ -1,6 +1,8 @@
 #ifndef _FUNCIONARIO_HPP_
 #define _FUNCIONARIO_HPP_
 
+#include <iostream>
+#include <fstream>
 #include <string>
 
 class Funcionario {
@@ -8,7 +10,7 @@ class Funcionario {
 		//construtores e destrutores {
 		Funcionario();
 		Funcionario(int id, std::string nome, std::string cpf, short idade, 
-					short tipo_sanguineo, char fator_rh, std::string especialidade);
+					std::string tipo_sanguineo, char fator_rh, std::string especialidade);
 		~Funcionario();
 		//	} construtores e destrutores
 
@@ -17,7 +19,7 @@ class Funcionario {
 		std::string get_m_nome(void);
 		std::string get_m_cpf(void);
 		short get_m_idade(void);
-		short get_m_tipo_sanguineo(void);
+		std::string get_m_tipo_sanguineo(void);
 		char get_m_fator_rh(void);
 		std::string get_m_especialidade(void);
 		// } getters
@@ -27,7 +29,7 @@ class Funcionario {
 		void set_m_nome(std::string nome);
 		void set_m_cpf(std::string cpf);
 		void set_m_idade(short idade);
-		void set_m_tipo_sanguineo(short tipo_sanguineo);
+		void set_m_tipo_sanguineo(std::string tipo_sanguineo);
 		void set_m_fator_rh(char fator_rh);
 		void set_m_especialidade(std::string especialidade);
 		// } setters
@@ -41,7 +43,7 @@ class Funcionario {
 		std::string m_nome;
 		std::string m_cpf;
 		short m_idade;
-		short m_tipo_sanguineo;
+		std::string m_tipo_sanguineo;
 		char m_fator_rh;
 		std::string m_especialidade;
 		// } membros

@@ -3,14 +3,12 @@
 
 #include "Funcionario.hpp"
 
-#include <string>
-
 class Veterinario : public Funcionario {
 	public:
 		// contrutores e destrutores {
 		Veterinario();
 		Veterinario(int id, std::string nome, std::string cpf, short idade, 
-					short tipo_sanguineo, char fator_rh, std::string especialidade,
+					std::string tipo_sanguineo, char fator_rh, std::string especialidade,
 					std::string crmv);
 		~Veterinario();
 		// } construtores e destrutores
