@@ -41,9 +41,7 @@ class Funcionario {
 		virtual void imprime_funcionario() = 0;
 		
 		//operadores
-		friend std::ostream& operator<<(std::ostream& os, const Funcionario& funcionario) {
-			return funcionario.print(os);
-		}
+		friend std::ostream& operator<<(std::ostream& os, const Funcionario& funcionario);
 
 	protected:
 		// membros {

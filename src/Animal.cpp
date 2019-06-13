@@ -86,3 +86,10 @@ void Animal::set_m_nome_batismo(std::string nome_batismo) {
 	m_nome_batismo = nome_batismo;
 }
 // } setters
+
+//operadores {
+std::ostream& operator<<(std::ostream& os, const Animal& animal) {
+			return animal.print(os);
+		}
+	
+// } operadores

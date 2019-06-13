@@ -47,9 +47,7 @@ class Animal {
 		virtual void alterarDado() = 0;
 		virtual void imprimeAnimal() = 0;
 		//operadores
-		friend std::ostream& operator<<(std::ostream& os, const Animal& animal) {
-			return animal.print(os);
-		}
+		friend std::ostream& operator<<(std::ostream& os, const Animal& animal);
 
 	protected:
 		// membros {

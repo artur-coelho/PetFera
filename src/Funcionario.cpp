@@ -69,3 +69,10 @@ void Funcionario::set_m_especialidade(std::string especialidade) {
 }
 // } setters
 
+// operadores {
+std::ostream& operator<<(std::ostream& os, const Funcionario& funcionario) {
+	return funcionario.print(os);
+}
+
+// } operadores
+

@@ -30,6 +30,20 @@ void Anfibio::set_m_ultima_muda(Date ultima_muda) {
 }
 // } setters
 
+std::ostream& Anfibio::print(std::ostream& os) const {
+			return os << "ID: " << m_id << endl
+					  << "Classe: " << m_classe << endl
+					  << "Nome Científico: " << m_nome_cientifico << endl
+					  << "Sexo: " << m_sexo << endl
+					  << "Tamanho: " << m_tamanho << endl
+					  << "Dieta: " << m_dieta << endl
+					  << "Veterinário: " << m_veterinario << endl
+					  << "Tratador: " << m_tratador << endl
+					  << "Nome de Batismo: " << m_nome_batismo << endl
+					  << "Total de mudas: " << m_total_de_mudas << endl
+					  << "Última muda: " << m_ultima_muda << endl;
+}
+
 void Anfibio::imprimeAnimal() {
 	std::cout << m_id << ";"
 			  << m_classe << ";"

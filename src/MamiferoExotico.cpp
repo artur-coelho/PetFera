@@ -18,6 +18,21 @@ MamiferoExotico::~MamiferoExotico() {}
 // setters {
 // } setters
 
+std::ostream& MamiferoExotico::print(std::ostream& os) const {
+			return os << "ID: " << m_id << endl
+					  << "Classe: " << m_classe << endl
+					  << "Nome Científico: " << m_nome_cientifico << endl
+					  << "Sexo: " << m_sexo << endl
+					  << "Tamanho: " << m_tamanho << endl
+					  << "Dieta: " << m_dieta << endl
+					  << "Veterinário: " << m_veterinario << endl
+					  << "Tratador: " << m_tratador << endl
+					  << "Nome de Batismo: " << m_nome_batismo << endl
+					  << "Cor do pelo: " << m_cor_pelo << endl
+					  << "Autorização do IBAMA: " << m_autorizacao_ibama << endl
+					  << "País de origem: " << m_pais_origem << endl;
+} 
+
 void MamiferoExotico::imprimeAnimal() {
 	std::cout << m_id << ";"
 			  << m_classe << ";"

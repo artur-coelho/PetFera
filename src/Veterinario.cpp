@@ -37,6 +37,17 @@ void Veterinario::alterarDado() {
 	return;
 }
 
+std::ostream& Veterinario::print(std::ostream& os) const {
+			return os << "ID: " << m_id << endl
+					  << "Nome: " << m_nome << endl
+					  << "CPF: " << m_cpf << endl
+					  << "Idade: " << m_idade << endl
+					  << "Tipo Sanguíneo: " << m_tipo_sanguineo << endl
+					  << "Fator RH: " << m_fator_rh << endl
+					  << "Especialidade: " << m_especialidade << endl
+					  << "CRMV: " << m_crmv << endl;
+}
+
 void Veterinario::imprime_funcionario() {
 	std::cout << m_id << ";"
 			 << m_nome << ";"

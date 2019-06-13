@@ -18,6 +18,22 @@ AveExotico::~AveExotico() {}
 // setters {
 // } setters
 
+std::ostream& AveExotico::print(std::ostream& os) const {
+			return os << "ID: " << m_id << endl
+					  << "Classe: " << m_classe << endl
+					  << "Nome Científico: " << m_nome_cientifico << endl
+					  << "Sexo: " << m_sexo << endl
+					  << "Tamanho: " << m_tamanho << endl
+					  << "Dieta: " << m_dieta << endl
+					  << "Veterinário: " << m_veterinario << endl
+					  << "Tratador: " << m_tratador << endl
+					  << "Nome de Batismo: " << m_nome_batismo << endl
+					  << "Tamanho do bico (cm): " << m_tamanho_do_bico_cm << endl
+					  << "Envergadura das asas: " << m_envergadura_das_asas << endl
+					  << "Autorização do IBAMA: " << m_autorizacao_ibama << endl
+					  << "País de origem: " << m_pais_origem << endl;
+}
+
 void AveExotico::imprimeAnimal() {
 	std::cout << m_id << ";"
 			  << m_classe << ";"
