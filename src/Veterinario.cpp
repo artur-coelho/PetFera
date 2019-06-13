@@ -24,7 +24,13 @@ void Veterinario::set_m_crmv(std::string crmv) {
 
 
 void Veterinario::escreverEmArquivo() {
-	return;
+	std::ofstream arqDados("Funcionarios.csv");
+	if(arqDados.bad()) {
+		std::cerr << "Erro ao abrir o arquivo!" << std::endl;
+		exit(1);
+	} else {
+		std::cout << "algo" << std::endl;
+	}
 }
 
 void Veterinario::alterarDado() {

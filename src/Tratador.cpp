@@ -23,7 +23,13 @@ void Tratador::set_m_nivel_de_seguranca(int nivel_de_seguranca) {
 // } setters
 
 void Tratador::escreverEmArquivo() {
-	return;
+	std::ofstream arqDados("Funcionarios.csv");
+	if(arqDados.bad()) {
+		std::cerr << "Erro ao abrir o arquivo!" << std::endl;
+		exit(1);
+	} else {
+		std::cout << "algo" << std::endl;
+	}
 }
 
 void Tratador::alterarDado() {
