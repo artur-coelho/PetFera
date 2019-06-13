@@ -6,6 +6,8 @@
 #include <string>
 
 class Funcionario {
+	private:
+		virtual std::ostream& print(std::ostream&) const = 0;
 	public:
 		//construtores e destrutores {
 		Funcionario();
@@ -36,6 +38,12 @@ class Funcionario {
 
 		virtual void escreverEmArquivo() = 0;
 		virtual void alterarDado() = 0;
+		virtual void imprime_funcionario() = 0;
+		
+		//operadores
+		friend std::ostream& operator<<(std::ostream& os, const Funcionario& funcionario) {
+			return funcionario.print(os);
+		}
 
 	protected:
 		// membros {

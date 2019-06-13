@@ -3,7 +3,7 @@
 
 #include "Animal.hpp"
 
-class Ave : Animal {
+class Ave : public Animal {
 	public:
 		// construtores e destrutores {
 		Ave();

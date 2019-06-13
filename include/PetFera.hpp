@@ -1,8 +1,9 @@
-	#ifndef _PETFERA_HPP_
+#ifndef _PETFERA_HPP_
 #define _PETFERA_HPP_
 
 #include "Animal.hpp"
 #include "Funcionario.hpp"
+#include "Tratador.hpp"
 
 #include <map>
 #include <vector>

@@ -36,3 +36,14 @@ void Veterinario::escreverEmArquivo() {
 void Veterinario::alterarDado() {
 	return;
 }
+
+void Veterinario::imprime_funcionario() {
+	std::cout << m_id << ";"
+			 << m_nome << ";"
+			 << m_cpf << ";"
+			 << m_idade << ";"
+			 << m_tipo_sanguineo << ";"
+			 << m_fator_rh << ";"
+			 << m_especialidade << ";"
+			 << m_crmv << ";" << endl;
+}

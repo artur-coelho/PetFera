@@ -29,3 +29,17 @@ void Anfibio::set_m_ultima_muda(Date ultima_muda) {
 	m_ultima_muda = ultima_muda;
 }
 // } setters
+
+/*void Anfibio::imprimeAnimal() {
+	cout << m_id << endl
+		  << m_classe << endl
+	   	  << m_nome_cientifico << endl
+		  << m_sexo << endl
+		  << m_tamanho << endl
+		  << m_dieta << endl
+		  << m_veterinario << endl
+		  << m_tratador << endl
+		  << m_nome_batismo << endl
+		  << m_total_de_mudas << endl
+		  << m_ultima_muda << endl;
+}*/

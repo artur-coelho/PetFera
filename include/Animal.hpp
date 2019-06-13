@@ -9,6 +9,8 @@
 #include <string>
 
 class Animal {
+	private:
+//		virtual std::ostream& print(std::ostream&) const = 0;
 	public:
 		// construtores e destrutores {
 		Animal();
@@ -43,6 +45,11 @@ class Animal {
 
 		virtual void escreverEmArquivo() = 0;
 		virtual void alterarDado() = 0;
+//		virtual void imprimeAnimal() = 0;
+		//operadores
+//		friend std::ostream& operator<<(std::ostream& os, const Animal& animal) {
+//			return animal.print(os);
+//		}
 
 	protected:
 		// membros {

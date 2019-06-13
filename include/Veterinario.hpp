@@ -3,7 +3,20 @@
 
 #include "Funcionario.hpp"
 
+using std::endl;
+
 class Veterinario : public Funcionario {
+	private:
+		std::ostream& print(std::ostream& os) const {
+			return os << "ID: " << m_id << endl
+					  << "Nome: " << m_nome << endl
+					  << "CPF: " << m_cpf << endl
+					  << "Idade: " << m_idade << endl
+					  << "Tipo Sanguíneo: " << m_tipo_sanguineo << endl
+					  << "Fator RH: " << m_fator_rh << endl
+					  << "Especialidade: " << m_especialidade << endl
+					  << "CRMV: " << m_crmv << endl;
+		}
 	public:
 		// contrutores e destrutores {
 		Veterinario();
@@ -23,6 +36,7 @@ class Veterinario : public Funcionario {
 		
 		void escreverEmArquivo();
 		void alterarDado();
+		void imprime_funcionario();
 
 	protected:
 		// membros {
