@@ -1,9 +1,30 @@
 #ifndef _PETFERA_HPP_
 #define _PETFERA_HPP_
 
-#include "Animal.hpp"
 #include "Funcionario.hpp"
 #include "Tratador.hpp"
+#include "Veterinario.hpp"
+
+#include "Animal.hpp"
+#include "AnimalExotico.hpp"
+#include "AnimalNativo.hpp"
+#include "AnimalSilvestre.hpp"
+
+#include "Anfibio.hpp"
+#include "AnfibioExotico.hpp"
+#include "AnfibioNativo.hpp"
+
+#include "Ave.hpp"
+#include "AveExotico.hpp"
+#include "AveNativo.hpp"
+
+#include "Mamifero.hpp"
+#include "MamiferoExotico.hpp"
+#include "MamiferoNativo.hpp"
+
+#include "Reptil.hpp"
+#include "ReptilExotico.hpp"
+#include "ReptilNativo.hpp"
 
 #include <map>
 #include <vector>
@@ -18,6 +39,7 @@ class PetFera {
 		void remover(Funcionario* funcionario_eliminado);
 		void alterar(int id, char baseDados); // baseDados: (f)uncionarios (a)nimais
 		void consultar();
+		void carregar();
 		void salvar();
 	private:
 		std::map<int, Funcionario*> funcionarios;

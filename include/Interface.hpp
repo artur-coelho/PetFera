@@ -12,6 +12,17 @@ class Interface {
 		void remover();
 		void alterar();
 		void consultar();
-		void sair();};
+		void sair();
+		void cadastrarFuncionario();
+		void cadastrarAnimal();
+		void removerFuncionario();
+		void removerAnimal();
+		void alterarFuncionario();
+		void alterarAnimal();
+		void consultarFuncionario();
+		void consultarAnimal();
+	private:
+		PetFera loja;
+};
 
 #endif

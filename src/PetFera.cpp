@@ -36,6 +36,10 @@ void PetFera::consultar() {
 	std::cout << "Ainda vou fazer essa" << std::endl;
 }
 
+void PetFera::carregar() {
+	std::cout << "Carreguei, pode acreditar!" << std::endl;
+}
+
 void PetFera::salvar() {
 	for (std::map<int, Funcionario*>::iterator it=funcionarios.begin(); it!=funcionarios.end(); ++it) {
 		it->second->escreverEmArquivo();
