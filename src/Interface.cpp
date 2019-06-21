@@ -253,6 +253,7 @@ void Interface::cadastrarAnimal() {
 	std::string paisOrigem;
 	std::string cidadeOrigem;
 	int totalMudas;
+	int diaUltimaMuda, mesUltimaMuda, anoUltimaMuda;
 	Date ultimaMuda;
 	std::string corPelo;
 	bool venenoso;
@@ -290,9 +291,15 @@ void Interface::cadastrarAnimal() {
 		case 'a':
 			std::cout << "Qual o total mudas do anfibio em questao? (int)" << std::endl << "> ";
 			std::cin >> totalMudas;
-			std::cout << "Qual a ultima muda do anfibio em questao? (%**(*@#&@#+§))" << std::endl << "> ";
-			//std::cin.ignore();
-			//std::cin >> ultimaMuda;
+			std::cout << "Qual o dia da ultima muda do anfibio em questao? (int)" << std::endl << "> ";
+			std::cin >> diaUltimaMuda;
+			ultimaMuda.set_day(diaUltimaMuda);
+			std::cout << "Qual o mes da ultima muda do anfibio em questao? (int)" << std::endl << "> ";
+			std::cin >> mesUltimaMuda;
+			ultimaMuda.set_month(mesUltimaMuda);
+			std::cout << "Qual o ano da ultima muda do anfibio em questao? (int)" << std::endl << "> ";
+			std::cin >> anoUltimaMuda;
+			ultimaMuda.set_year(anoUltimaMuda);
 			break;
 		case 'm':
 			std::cout << "Qual o cor do pelo do mamifero em questao? (string)" << std::endl << "> ";
@@ -331,13 +338,39 @@ void Interface::cadastrarAnimal() {
 					std::cout << "Qual a UF do animal? (string)" << std::endl << "> ";
 					std::cin.ignore();
 					std::getline(cin, ufOrigem);
+					switch(anf_mam_rep_ave){
+						case 'a':
+							novoAnimal = new AnfibioNativo();
+							break;
+						case 'm':
+							novoAnimal = new MamiferoNativo();
+							break;
+						case 'r':
+							novoAnimal = new ReptilNativo();
+							break;
+						case 'v':
+							novoAnimal = new AveNativo();
+							break;
+					}
 					break;
 				case 'e':
 					std::cout << "Qual o pais de origem do animal? (string)" << std::endl << "> ";
 					std::cin.ignore();
 					std::getline(cin, paisOrigem);
-					std::cout << "O animal eh um (a)nfibio, (m)amifero, (r)eptil ou a(v)e?" << std::endl << "> ";
-					std::cin >> anf_mam_rep_ave;
+					switch(anf_mam_rep_ave){
+						case 'a':
+							novoAnimal = new AnfibioExotico();
+							break;
+						case 'm':
+							novoAnimal = new MamiferoExotico();
+							break;
+						case 'r':
+							novoAnimal = new ReptilExotico();
+							break;
+						case 'v':
+							novoAnimal = new AveExotico();
+							break;
+					}
 					break;
 				default:
 					optInvalida();
@@ -345,6 +378,20 @@ void Interface::cadastrarAnimal() {
 			}
 			break;
 		case 'd':
+			switch(anf_mam_rep_ave){
+				case 'a':
+					novoAnimal = new Anfibio();
+					break;
+				case 'm':
+					novoAnimal = new Mamifero();
+					break;
+				case 'r':
+					novoAnimal = new Reptil();
+					break;
+				case 'v':
+					novoAnimal = new Ave();
+					break;
+			}
 			break;
 		default:
 			optInvalida();
