@@ -27,7 +27,8 @@ class Reptil : public Animal {
 		void set_m_tipo_veneno(std::string tipo_veneno);
 		// } setters
 
-		void imprimeAnimal();
+		void escreverEmArquivo();
+		void alterarDado();
 
 	protected:
 		// membros {

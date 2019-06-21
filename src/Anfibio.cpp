@@ -44,17 +44,13 @@ std::ostream& Anfibio::print(std::ostream& os) const {
 					  << "Última muda: " << m_ultima_muda << endl;
 }
 
-void Anfibio::imprimeAnimal() {
-	std::cout << m_id << ";"
-			  << m_classe << ";"
-		   	  << m_nome_cientifico << ";"
-			  << m_sexo << ";"
-			  << m_tamanho << ";"
-			  << m_dieta << ";"
-			  << m_veterinario << ";"
-			  << m_tratador << ";"
-			  << m_nome_batismo << ";"
-			  << m_total_de_mudas << ";"
-			  << m_ultima_muda << ";";
+
+void Anfibio::escreverEmArquivo(){
+	std::cout << "Pegadinha do malandro" << std::endl;
+	return;
 }
 
+void Anfibio::alterarDado(){
+	std::cout << "Pegadinha do malandro" << std::endl;
+	return;
+}

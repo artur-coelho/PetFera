@@ -25,8 +25,6 @@ class ReptilExotico : public Reptil, AnimalExotico {
 		
 		// } setters
 
-		void imprimeAnimal();
-
 	protected:
 		// membros {
 		

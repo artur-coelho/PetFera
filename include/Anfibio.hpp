@@ -27,8 +27,9 @@ class Anfibio : public Animal {
 		void set_m_total_de_mudas(int total_de_mudas);
 		void set_m_ultima_muda(Date ultima_muda);
 		// } setters
-
-		void imprimeAnimal();
+		
+		void escreverEmArquivo();
+		void alterarDado();
 
 	protected:
 		// membros {

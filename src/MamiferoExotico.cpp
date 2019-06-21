@@ -32,18 +32,3 @@ std::ostream& MamiferoExotico::print(std::ostream& os) const {
 					  << "Autorização do IBAMA: " << m_autorizacao_ibama << endl
 					  << "País de origem: " << m_pais_origem << endl;
 } 
-
-void MamiferoExotico::imprimeAnimal() {
-	std::cout << m_id << ";"
-			  << m_classe << ";"
-		   	  << m_nome_cientifico << ";"
-			  << m_sexo << ";"
-			  << m_tamanho << ";"
-			  << m_dieta << ";"
-			  << m_veterinario << ";"
-			  << m_tratador << ";"
-			  << m_nome_batismo << ";"
-			  << m_cor_pelo << ";"
-			  << m_autorizacao_ibama << ";"
-			  << m_pais_origem << ";";
-}

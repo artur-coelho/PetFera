@@ -26,8 +26,6 @@ class AnfibioNativo : public Anfibio, AnimalNativo {
 		
 		// } setters
 
-		void imprimeAnimal();
-
 	protected:
 		// membros {
 		

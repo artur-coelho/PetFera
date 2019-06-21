@@ -34,20 +34,3 @@ std::ostream& AveNativo::print(std::ostream& os) const {
 					  << "UF de origem: " << m_uf_origem << endl
 					  << "Autorização: " << m_autorizacao << endl;
 } 
-
-void AveNativo::imprimeAnimal() {
-	std::cout << m_id << ";"
-			  << m_classe << ";"
-		   	  << m_nome_cientifico << ";"
-			  << m_sexo << ";"
-			  << m_tamanho << ";"
-			  << m_dieta << ";"
-			  << m_veterinario << ";"
-			  << m_tratador << ";"
-			  << m_nome_batismo << ";"
-			  << m_tamanho_do_bico_cm << ";"
-			  << m_envergadura_das_asas << ";"
-			  << m_autorizacao_ibama << ";"
-			  << m_uf_origem << ";"
-			  << m_autorizacao << ";";
-}

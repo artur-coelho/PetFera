@@ -27,7 +27,8 @@ class Mamifero : public Animal{
 		void set_m_cor_pelo(std::string cor_pelo);
 		// } setters
 
-		void imprimeAnimal();
+		void escreverEmArquivo();
+		void alterarDado();
 
 	protected:
 		// membros {

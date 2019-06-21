@@ -28,7 +28,9 @@ class Ave : public Animal {
 		void set_m_envergadura_das_asas(double envergadura_das_asas);
 		// } setters
 
-		void imprimeAnimal();
+		void escreverEmArquivo();
+		void alterarDado();
+
 
 	protected:
 		// membros {

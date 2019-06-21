@@ -25,8 +25,6 @@ class MamiferoNativo : public Mamifero, AnimalNativo {
 		
 		// } setters
 
-		void imprimeAnimal();
-
 	protected:
 		// membros {
 		

@@ -25,8 +25,6 @@ class AveNativo : public Ave, AnimalNativo {
 		
 		// } setters
 
-		void imprimeAnimal();
-
 	protected:
 		// membros {
 			

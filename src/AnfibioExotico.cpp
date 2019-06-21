@@ -26,20 +26,4 @@ std::ostream& AnfibioExotico::print(std::ostream& os) const {
 					  << "Última muda: " << m_ultima_muda << endl
 					  << "Autorização do IBAMA: " << m_autorizacao_ibama << endl
 					  << "País de origem: " << m_pais_origem << endl;
-} 
-
-void AnfibioExotico::imprimeAnimal() {
-	std::cout << m_id << ";"
-			  << m_classe << ";"
-		   	  << m_nome_cientifico << ";"
-			  << m_sexo << ";"
-			  << m_tamanho << ";"
-			  << m_dieta << ";"
-			  << m_veterinario << ";"
-			  << m_tratador << ";"
-			  << m_nome_batismo << ";"
-			  << m_total_de_mudas << ";"
-			  << m_ultima_muda << ";"
-			  << m_autorizacao_ibama << ";"
-			  << m_pais_origem << ";";
-	}
+}

@@ -33,19 +33,3 @@ std::ostream& MamiferoNativo::print(std::ostream& os) const {
 					  << "UF de origem: " << m_uf_origem << endl
 					  << "Autorização: " << m_autorizacao << endl;
 } 
-
-void MamiferoNativo::imprimeAnimal() {
-	std::cout << m_id << ";"
-			  << m_classe << ";"
-		   	  << m_nome_cientifico << ";"
-			  << m_sexo << ";"
-			  << m_tamanho << ";"
-			  << m_dieta << ";"
-			  << m_veterinario << ";"
-			  << m_tratador << ";"
-			  << m_nome_batismo << ";"
-			  << m_cor_pelo << ";"
-			  << m_autorizacao_ibama << ";"
-			  << m_uf_origem << ";"
-			  << m_autorizacao << ";";
-}
