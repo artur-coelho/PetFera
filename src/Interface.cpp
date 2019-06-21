@@ -228,6 +228,7 @@ void Interface::cadastrarFuncionario() {
 		novoFuncionario = new Tratador(id, nome, cpf, idade, tipoSanguineo, fatorRh, especialidade, nivelSeguranca);
 	}
 	loja.cadastrar(novoFuncionario);
+	menu();
 }
 
 void Interface::cadastrarAnimal() {
@@ -239,15 +240,15 @@ void Interface::cadastrarAnimal() {
 	char sexo;
 	double tamanho;
 	std::string dieta;
-	Veterinario veterinario; // Temporariamente
-	Tratador tratador; // Temporariamente
+	int idVeterinario;
+	int idTratador;
 	std::string nomeBatismo;
 	std::string autorizacaoIbama;
 	std::string ufOrigem;
 	std::string paisOrigem;
 	std::string cidadeOrigem;
 	int totalMudas;
-	Date ultimaMuda; // temporariamente
+	Date ultimaMuda;
 	std::string corPelo;
 	bool venenoso;
 	std::string tipoVeneno;
@@ -256,23 +257,23 @@ void Interface::cadastrarAnimal() {
 	std::cout <<
 	std::endl <<
 	"Cadastro de Animal:" << std::endl;
-	std::cout << "Qual o ID do animal que estamos cadastrando?" std::endl << "> ";
+	std::cout << "Qual o ID do animal que estamos cadastrando?" << std::endl << "> ";
 	std::cin >> id;
-	std::cout << "Qual a classe do animal que estamos cadastrando?" std::endl << "> ";
+	std::cout << "Qual a classe do animal que estamos cadastrando?" << std::endl << "> ";
 	std::cin >> classe;
-	std::cout << "Qual o nome cientifico do animal que estamos cadastrando?" std::endl << "> ";
+	std::cout << "Qual o nome cientifico do animal que estamos cadastrando?" << std::endl << "> ";
 	std::cin >> nomeCientifico;
-	std::cout << "Qual o sexo do animal que estamos cadastrando?" std::endl << "> ";
+	std::cout << "Qual o sexo do animal que estamos cadastrando?" << std::endl << "> ";
 	std::cin >> sexo;
-	std::cout << "Qual o tamanho do animal que estamos cadastrando?" std::endl << "> ";
+	std::cout << "Qual o tamanho do animal que estamos cadastrando?" << std::endl << "> ";
 	std::cin >> tamanho;
-	std::cout << "Qual a dieta do animal que estamos cadastrando?" std::endl << "> ";
+	std::cout << "Qual a dieta do animal que estamos cadastrando?" << std::endl << "> ";
 	std::cin >> dieta;
-	std::cout << "Qual o veterinario do animal que estamos cadastrando?" std::endl << "> ";
-	std::cin >> Veterinario; // Temporariamente
-	std::cout << "Qual o tratador do animal que estamos cadastrando?" std::endl << "> ";
-	std::cin >> Tratador; // Temporariamente
-	std::cout << "Qual o nome de batismo do animal que estamos cadastrando?" std::endl << "> ";
+	std::cout << "Qual o id do veterinario do animal que estamos cadastrando?" << std::endl << "> ";
+	std::cin >> idVeterinario;
+	std::cout << "Qual o id do tratador do animal que estamos cadastrando?" << std::endl << "> ";
+	std::cin >> idTratador;
+	std::cout << "Qual o nome de batismo do animal que estamos cadastrando?" << std::endl << "> ";
 	std::cin >> nomeBatismo;
 	std::cout << "O animal eh um (a)nfibio, (m)amifero, (r)eptil ou a(v)e?" << std::endl << "> ";
 	std::cin >> anf_mam_rep_ave;
@@ -281,7 +282,7 @@ void Interface::cadastrarAnimal() {
 			std::cout << "Qual o total mudas do anfibio em questao?" << std::endl << "> ";
 			std::cin >> totalMudas;
 			std::cout << "Qual a ultima muda do anfibio em questao?" << std::endl << "> ";
-			std::cin >> ultimaMuda;
+			//std::cin >> ultimaMuda;
 			break;
 		case 'm':
 			std::cout << "Qual o cor do pelo do mamifero em questao?" << std::endl << "> ";
@@ -300,6 +301,8 @@ void Interface::cadastrarAnimal() {
 			std::cin >> envergaduraAsas;
 			break;
 		default:
+			optInvalida();
+			cadastrarAnimal();
 	}
 	std::cout << "Esse animal eh (s)ilvestre ou (d)omestico?" << std::endl <<
 	"> ";
@@ -322,14 +325,18 @@ void Interface::cadastrarAnimal() {
 					std::cin >> anf_mam_rep_ave;
 					break;
 				default:
-
+					optInvalida();
+					cadastrarAnimal();
 			}
 			break;
 		case 'd':
 			break;
 		default:
+			optInvalida();
+			cadastrarAnimal();
 	}
 	loja.cadastrar(novoAnimal);
+	menu();
 }
 
 void Interface::removerFuncionario() {
