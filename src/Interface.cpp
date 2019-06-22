@@ -344,16 +344,16 @@ void Interface::cadastrarAnimal() {
 					std::getline(cin, ufOrigem);
 					switch(anf_mam_rep_ave){
 						case 'a':
-							novoAnimal = new AnfibioNativo();
+							novoAnimal = new AnfibioNativo(id, classe, nomeCientifico, sexo, tamanho, dieta, veterinario, tratador, nomeBatismo, totalMudas, ultimaMuda, autorizacaoIbama, ufOrigem);
 							break;
 						case 'm':
-							novoAnimal = new MamiferoNativo();
+							novoAnimal = new MamiferoNativo(id, classe, nomeCientifico, sexo, tamanho, dieta, veterinario, tratador, nomeBatismo, corPelo, autorizacaoIbama, ufOrigem);
 							break;
 						case 'r':
-							novoAnimal = new ReptilNativo();
+							novoAnimal = new ReptilNativo(id, classe, nomeCientifico, sexo, tamanho, dieta, veterinario, tratador, nomeBatismo, venenoso, tipoVeneno, autorizacaoIbama, ufOrigem);
 							break;
 						case 'v':
-							novoAnimal = new AveNativo();
+							novoAnimal = new AveNativo(id, classe, nomeCientifico, sexo, tamanho, dieta, veterinario, tratador, nomeBatismo, tamanhoBicoCm, envergaduraAsas, autorizacaoIbama, ufOrigem);
 							break;
 					}
 					break;
@@ -363,16 +363,16 @@ void Interface::cadastrarAnimal() {
 					std::getline(cin, paisOrigem);
 					switch(anf_mam_rep_ave){
 						case 'a':
-							novoAnimal = new AnfibioExotico();
+							novoAnimal = new AnfibioExotico(id, classe, nomeCientifico, sexo, tamanho, dieta, veterinario, tratador, nomeBatismo, totalMudas, ultimaMuda, autorizacaoIbama, paisOrigem);
 							break;
 						case 'm':
-							novoAnimal = new MamiferoExotico();
+							novoAnimal = new MamiferoExotico(id, classe, nomeCientifico, sexo, tamanho, dieta, veterinario, tratador, nomeBatismo, corPelo, autorizacaoIbama, paisOrigem);
 							break;
 						case 'r':
-							novoAnimal = new ReptilExotico();
+							novoAnimal = new ReptilExotico(id, classe, nomeCientifico, sexo, tamanho, dieta, veterinario, tratador, nomeBatismo, venenoso, tipoVeneno, autorizacaoIbama, paisOrigem);
 							break;
 						case 'v':
-							novoAnimal = new AveExotico();
+							novoAnimal = new AveExotico(id, classe, nomeCientifico, sexo, tamanho, dieta, veterinario, tratador, nomeBatismo, tamanhoBicoCm, envergaduraAsas, autorizacaoIbama, paisOrigem);
 							break;
 					}
 					break;
@@ -384,16 +384,16 @@ void Interface::cadastrarAnimal() {
 		case 'd':
 			switch(anf_mam_rep_ave){
 				case 'a':
-					novoAnimal = new Anfibio();
+					novoAnimal = new Anfibio(id, classe, nomeCientifico, sexo, tamanho, dieta, veterinario, tratador, nomeBatismo, totalMudas, ultimaMuda);
 					break;
 				case 'm':
-					novoAnimal = new Mamifero();
+					novoAnimal = new Mamifero(id, classe, nomeCientifico, sexo, tamanho, dieta, veterinario, tratador, nomeBatismo, corPelo);
 					break;
 				case 'r':
-					novoAnimal = new Reptil();
+					novoAnimal = new Reptil(id, classe, nomeCientifico, sexo, tamanho, dieta, veterinario, tratador, nomeBatismo, venenoso, tipoVeneno);
 					break;
 				case 'v':
-					novoAnimal = new Ave();
+					novoAnimal = new Ave(id, classe, nomeCientifico, sexo, tamanho, dieta, veterinario, tratador, nomeBatismo, tamanhoBicoCm, envergaduraAsas);
 					break;
 			}
 			break;

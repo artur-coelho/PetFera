@@ -8,7 +8,7 @@ MamiferoNativo::MamiferoNativo(int id, std::string classe, std::string nome_cien
 		 	   std::string autorizacao_ibama, std::string uf_origem, std::string autorizacao) :
 		 	   Mamifero(id, classe, nome_cientifico, sexo, tamanho, dieta, veterinario,
 		 	   tratador, nome_batismo, cor_pelo),
-		 	   AnimalNativo(autorizacao_ibama, uf_origem, autorizacao) { }
+		 	   AnimalNativo(autorizacao_ibama, uf_origem) { }
 MamiferoNativo::~MamiferoNativo() {}
 // } construtores e destrutores
 

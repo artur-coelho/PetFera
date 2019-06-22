@@ -13,7 +13,7 @@ class ReptilNativo : public Reptil, AnimalNativo {
 		ReptilNativo(int id, std::string classe, std::string nome_cientifico,
 		 	   char sexo, double tamanho, std::string dieta, Veterinario* veterinario,
 		 	   Tratador* tratador, std::string nome_batismo, bool venenoso, std::string tipo_veneno,
-		 	   std::string autorizacao_ibama, std::string uf_origem, std::string autorizacao);
+		 	   std::string autorizacao_ibama, std::string uf_origem);
 		~ReptilNativo();	
 		// } construtores e destrutores
 		

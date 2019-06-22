@@ -8,7 +8,7 @@ ReptilNativo::ReptilNativo(int id, std::string classe, std::string nome_cientifi
 		 	   std::string autorizacao_ibama, std::string uf_origem, std::string autorizacao) : 
 		 	   Reptil(id, classe, nome_cientifico, sexo, tamanho,dieta, veterinario, tratador, 
 		 	   nome_batismo, venenoso,tipo_veneno),
-		 	   AnimalNativo(autorizacao_ibama, uf_origem, autorizacao) { }
+		 	   AnimalNativo(autorizacao_ibama, uf_origem) { }
 ReptilNativo::~ReptilNativo() {}
 // } construtores e destrutores
 

@@ -8,7 +8,7 @@ AveNativo::AveNativo(int id, std::string classe, std::string nome_cientifico,
 		 	   double envergadura_das_asas, std::string autorizacao_ibama, std::string uf_origem, std::string autorizacao) :
 		 	   Ave(id, classe, nome_cientifico, sexo, tamanho, dieta, veterinario,
 		 	   tratador, nome_batismo, tamanho_do_bico_cm, envergadura_das_asas), 
-		 	   AnimalNativo(autorizacao_ibama, uf_origem, autorizacao) { }
+		 	   AnimalNativo(autorizacao_ibama, uf_origem) { }
 AveNativo::~AveNativo() {}
 // } construtores e destrutores
 

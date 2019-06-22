@@ -13,7 +13,7 @@ class AveNativo : public Ave, AnimalNativo {
 		AveNativo(int id, std::string classe, std::string nome_cientifico,
 		 	   char sexo, double tamanho, std::string dieta, Veterinario* veterinario,
 		 	   Tratador* tratador, std::string nome_batismo, double tamanho_do_bico_cm, 
-		 	   double envergadura_das_asas, std::string autorizacao_ibama, std::string uf_origem, std::string autorizacao);
+		 	   double envergadura_das_asas, std::string autorizacao_ibama, std::string uf_origem);
 		~AveNativo();
 		// } construtores e destrutores
 		

@@ -1,5 +1,3 @@
 Lembrar de colocar o ; para separar os dados nas funções print()
 lembrar de colocar os parâmetros nos construtores na interface.cpp
-criar get e set de funcionario no Petfera (usar o consultar)
-
 validar se é mesmo um tratador ou veterinario que está sendo associado a um animal quando usamos o id na interface
