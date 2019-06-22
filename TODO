@@ -1,9 +1,5 @@
-Plano do que fazer:
-Adicionar métodos virtuais em Animal e Funcionários
-A gravação do arquivo vai ficar sob a responsabilidade de cada classe de se gravar
-A edição vai ficar sob responsabilidade de cada classe de se editar
+Lembrar de colocar o ; para separar os dados nas funções print()
+lembrar de colocar os parâmetros nos construtores na interface.cpp
+criar get e set de funcionario no Petfera (usar o consultar)
 
-Pelo visto os arquivos vão ter que ser individualizados, pois cada classe vai cuidar do seu
-O próprio PetFera é a interface, não precisando de outra.
-
-Alocação Dinâmica? Teste e veja funcionar
+validar se é mesmo um tratador ou veterinario que está sendo associado a um animal quando usamos o id na interface

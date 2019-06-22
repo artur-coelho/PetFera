@@ -32,8 +32,8 @@ void PetFera::alterar(int id, char baseDados) {
 	}
 }
 
-void PetFera::consultar() {
-	std::cout << "Ainda vou fazer essa" << std::endl;
+Funcionario* PetFera::consultarFuncionario(int id) {
+	return funcionarios[id];
 }
 
 void PetFera::carregar() {

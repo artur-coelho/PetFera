@@ -247,6 +247,8 @@ void Interface::cadastrarAnimal() {
 	std::string dieta;
 	int idVeterinario;
 	int idTratador;
+	Veterinario* veterinario;
+	Tratador* tratador;
 	std::string nomeBatismo;
 	std::string autorizacaoIbama;
 	std::string ufOrigem;
@@ -280,8 +282,10 @@ void Interface::cadastrarAnimal() {
 	std::getline(cin, dieta);
 	std::cout << "Qual o id do veterinario do animal que estamos cadastrando? (int)" << std::endl << "> ";
 	std::cin >> idVeterinario;
+	veterinario = (Veterinario*)(loja.consultarFuncionario(idVeterinario));
 	std::cout << "Qual o id do tratador do animal que estamos cadastrando? (int)" << std::endl << "> ";
 	std::cin >> idTratador;
+	tratador = (Tratador*)(loja.consultarFuncionario(idTratador));
 	std::cout << "Qual o nome de batismo do animal que estamos cadastrando? (string)" << std::endl << "> ";
 	std::cin.ignore();
 	std::getline(cin, nomeBatismo);
