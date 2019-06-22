@@ -5,7 +5,7 @@ MamiferoNativo::MamiferoNativo() {}
 MamiferoNativo::MamiferoNativo(int id, std::string classe, std::string nome_cientifico,
 		 	   char sexo, double tamanho, std::string dieta, Veterinario* veterinario,
 		 	   Tratador* tratador, std::string nome_batismo, std::string cor_pelo,
-		 	   std::string autorizacao_ibama, std::string uf_origem, std::string autorizacao) :
+		 	   std::string autorizacao_ibama, std::string uf_origem) :
 		 	   Mamifero(id, classe, nome_cientifico, sexo, tamanho, dieta, veterinario,
 		 	   tratador, nome_batismo, cor_pelo),
 		 	   AnimalNativo(autorizacao_ibama, uf_origem) { }
@@ -30,6 +30,5 @@ std::ostream& MamiferoNativo::print(std::ostream& os) const {
 					  << "Nome de Batismo: " << m_nome_batismo << endl
 					  << "Cor do pelo: " << m_cor_pelo << endl
 					  << "Autorização do IBAMA: " << m_autorizacao_ibama << endl
-					  << "UF de origem: " << m_uf_origem << endl
-					  << "Autorização: " << m_autorizacao << endl;
-} 
+					  << "UF de origem: " << m_uf_origem << endl;
+}

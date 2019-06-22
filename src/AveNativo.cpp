@@ -4,10 +4,10 @@
 AveNativo::AveNativo() {}
 AveNativo::AveNativo(int id, std::string classe, std::string nome_cientifico,
 		 	   char sexo, double tamanho, std::string dieta, Veterinario* veterinario,
-		 	   Tratador* tratador, std::string nome_batismo, double tamanho_do_bico_cm, 
-		 	   double envergadura_das_asas, std::string autorizacao_ibama, std::string uf_origem, std::string autorizacao) :
+		 	   Tratador* tratador, std::string nome_batismo, double tamanho_do_bico_cm,
+		 	   double envergadura_das_asas, std::string autorizacao_ibama, std::string uf_origem) :
 		 	   Ave(id, classe, nome_cientifico, sexo, tamanho, dieta, veterinario,
-		 	   tratador, nome_batismo, tamanho_do_bico_cm, envergadura_das_asas), 
+		 	   tratador, nome_batismo, tamanho_do_bico_cm, envergadura_das_asas),
 		 	   AnimalNativo(autorizacao_ibama, uf_origem) { }
 AveNativo::~AveNativo() {}
 // } construtores e destrutores
@@ -31,6 +31,5 @@ std::ostream& AveNativo::print(std::ostream& os) const {
 					  << "Tamanho do bico (cm): " << m_tamanho_do_bico_cm << endl
 					  << "Envergadura das asas: " << m_envergadura_das_asas << endl
 					  << "Autorização do IBAMA: " << m_autorizacao_ibama << endl
-					  << "UF de origem: " << m_uf_origem << endl
-					  << "Autorização: " << m_autorizacao << endl;
-} 
+					  << "UF de origem: " << m_uf_origem << endl;
+}
