@@ -2,9 +2,9 @@
 
 // contrutores e destrutores {
 Veterinario::Veterinario() {}
-Veterinario::Veterinario(int id, std::string nome, std::string cpf, short idade, 
+Veterinario::Veterinario(int id, std::string nome, std::string cpf, short idade,
 						std::string tipo_sanguineo, char fator_rh, std::string especialidade,
-						std::string crmv) : 
+						std::string crmv) :
 						Funcionario(id, nome, cpf, idade, tipo_sanguineo,
 						fator_rh, especialidade), m_crmv(crmv) { }
 Veterinario::~Veterinario() {}
@@ -23,18 +23,23 @@ void Veterinario::set_m_crmv(std::string crmv) {
 // } setters
 
 
-void Veterinario::escreverEmArquivo() {
-	std::ofstream arqDados("Funcionarios.csv");
-	if(arqDados.bad()) {
-		std::cerr << "Erro ao abrir o arquivo!" << std::endl;
-		exit(1);
+void Veterinario::escreverEmArquivo(){
+	std::ofstream arquivo ("Funcionarios.csv");
+	if (arquivo) {
+		arquivo.seekp (0, arquivo.end);
+		arquivo
+		 			<< m_id << ";"
+					<< "Veterinario" << ";"
+					<< m_nome << ";"
+					<< m_cpf << ";"
+					<< m_idade << ";"
+					<< m_tipo_sanguineo << ";"
+					<< m_fator_rh << ";"
+					<< m_especialidade << ";"
+					<< m_crmv << ";" << std::endl;
 	} else {
-		std::cout << "algo" << std::endl;
+		std::cerr << "Falha ao escrever em Funcionarios.csv" << std::endl;
 	}
-}
-
-void Veterinario::alterarDado() {
-	return;
 }
 
 std::ostream& Veterinario::print(std::ostream& os) const {
@@ -46,15 +51,4 @@ std::ostream& Veterinario::print(std::ostream& os) const {
 					  << "Fator RH: " << m_fator_rh << endl
 					  << "Especialidade: " << m_especialidade << endl
 					  << "CRMV: " << m_crmv << endl;
-}
-
-void Veterinario::imprime_funcionario() {
-	std::cout << m_id << ";"
-			 << m_nome << ";"
-			 << m_cpf << ";"
-			 << m_idade << ";"
-			 << m_tipo_sanguineo << ";"
-			 << m_fator_rh << ";"
-			 << m_especialidade << ";"
-			 << m_crmv << ";" << endl;
 }

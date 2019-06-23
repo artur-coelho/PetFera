@@ -10,12 +10,12 @@ class Tratador : public Funcionario {
 	public:
 		// construtores e destrutores {
 		Tratador();
-		Tratador(int id, std::string nome, std::string cpf, short idade, 
+		Tratador(int id, std::string nome, std::string cpf, short idade,
 				std::string tipo_sanguineo, char fator_rh, std::string especialidade,
 				int nivel_de_seguranca);
 		~Tratador();
 		// } construtores e destrutores
-		
+
 		// getters {
 		int get_m_nivel_de_seguranca(void);
 		// } getters
@@ -25,8 +25,6 @@ class Tratador : public Funcionario {
 		// } setters
 
 		void escreverEmArquivo();
-		void alterarDado();
-		void imprime_funcionario();
 
 	protected:
 		// membros {
