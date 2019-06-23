@@ -3,3 +3,6 @@ verificar se o id que está sendo cadastrado já não existe no banco de dados
 se tiver 0 no id do veterinario ou tratador, não devemos tentar acessar algo deles a partir do animal
 fazer os outros animais guardarem em um arquivo
 guardar arquivo funcionarios
+verificar pq o cadastro de um animal ou funcionario está sobrescrevendo o outro. Estou fechando os arquivos ao final?
+Escrever nos arquivos posteriormente coisas particulares a cada animal
+iniciar leitura do arquivo csv na inicialização
