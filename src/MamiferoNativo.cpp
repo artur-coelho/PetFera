@@ -32,3 +32,22 @@ std::ostream& MamiferoNativo::print(std::ostream& os) const {
 					  << "Autorização do IBAMA: " << m_autorizacao_ibama << endl
 					  << "UF de origem: " << m_uf_origem << endl;
 }
+
+void MamiferoNativo::escreverEmArquivo(){
+	std::ofstream arquivo ("Animais.csv");
+	if (arquivo) {
+		arquivo.seekp (0, arquivo.end);
+		arquivo
+		 			<< m_id << ";"
+					<< m_classe << ";"
+					<< m_nome_cientifico << ";"
+					<< m_sexo << ";"
+					<< m_tamanho << ";"
+					<< m_dieta << ";"
+					<< m_veterinario->get_m_id() << ";"
+					<< m_tratador->get_m_id() << ";"
+					<< m_nome_batismo << ";" << std::endl;
+	} else {
+		std::cerr << "Falha ao escrever em Animais.csv" << std::endl;
+	}
+}

@@ -24,6 +24,7 @@ class AveNativo : public Ave, AnimalNativo {
 		// setters {
 
 		// } setters
+		void escreverEmArquivo();
 
 	protected:
 		// membros {

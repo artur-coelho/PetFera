@@ -4,7 +4,7 @@
 Mamifero::Mamifero() {}
 Mamifero::Mamifero(int id, std::string classe, std::string nome_cientifico,
 		 	   char sexo, double tamanho, std::string dieta, Veterinario* veterinario,
-		 	   Tratador* tratador, std::string nome_batismo, std::string cor_pelo) : 
+		 	   Tratador* tratador, std::string nome_batismo, std::string cor_pelo) :
 			   Animal(id, classe, nome_cientifico, sexo, tamanho, dieta, veterinario,
 		 	   tratador, nome_batismo), m_cor_pelo(cor_pelo) { }
 Mamifero::~Mamifero() {}
@@ -33,10 +33,25 @@ std::ostream& Mamifero::print(std::ostream& os) const {
 					  << "Tratador: " << m_tratador << endl
 					  << "Nome de Batismo: " << m_nome_batismo << endl
 					  << "Cor do pelo: " << m_cor_pelo << endl;
-} 
+}
 
 void Mamifero::escreverEmArquivo(){
-	return;
+	std::ofstream arquivo ("Animais.csv");
+	if (arquivo) {
+		arquivo.seekp (0, arquivo.end);
+		arquivo
+		 			<< m_id << ";"
+					<< m_classe << ";"
+					<< m_nome_cientifico << ";"
+					<< m_sexo << ";"
+					<< m_tamanho << ";"
+					<< m_dieta << ";"
+					<< m_veterinario->get_m_id() << ";"
+					<< m_tratador->get_m_id() << ";"
+					<< m_nome_batismo << ";" << std::endl;
+	} else {
+		std::cerr << "Falha ao escrever em Animais.csv" << std::endl;
+	}
 }
 
 void Mamifero::alterarDado(){

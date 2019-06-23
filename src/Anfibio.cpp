@@ -46,8 +46,22 @@ std::ostream& Anfibio::print(std::ostream& os) const {
 
 
 void Anfibio::escreverEmArquivo(){
-	std::cout << "Pegadinha do malandro" << std::endl;
-	return;
+	std::ofstream arquivo ("Animais.csv");
+	if (arquivo) {
+		arquivo.seekp (0, arquivo.end);
+		arquivo
+		 			<< m_id << ";"
+					<< m_classe << ";"
+					<< m_nome_cientifico << ";"
+					<< m_sexo << ";"
+					<< m_tamanho << ";"
+					<< m_dieta << ";"
+					<< m_veterinario->get_m_id() << ";"
+					<< m_tratador->get_m_id() << ";"
+					<< m_nome_batismo << ";" << std::endl;
+	} else {
+		std::cerr << "Falha ao escrever em Animais.csv" << std::endl;
+	}
 }
 
 void Anfibio::alterarDado(){

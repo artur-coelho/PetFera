@@ -16,18 +16,19 @@ class ReptilExotico : public Reptil, AnimalExotico {
 		 	   std::string autorizacao_ibama, std::string pais_origem);
 		~ReptilExotico();
 		// } construtores e destrutores
-		
+
 		// getters {
-		
+
 		// } getters
 
 		// setters {
-		
+
 		// } setters
+		void escreverEmArquivo();
 
 	protected:
 		// membros {
-		
+
 		// } membros
 };
 

@@ -4,8 +4,8 @@
 Ave::Ave() {}
 Ave::Ave(int id, std::string classe, std::string nome_cientifico,
 		 	   char sexo, double tamanho, std::string dieta, Veterinario* veterinario,
-		 	   Tratador* tratador, std::string nome_batismo, double tamanho_do_bico_cm, 
-		 	   double envergadura_das_asas) : 
+		 	   Tratador* tratador, std::string nome_batismo, double tamanho_do_bico_cm,
+		 	   double envergadura_das_asas) :
 			   Animal(id, classe, nome_cientifico, sexo, tamanho, dieta, veterinario,
 		 	   tratador, nome_batismo), m_tamanho_do_bico_cm(tamanho_do_bico_cm),
 		 	   m_envergadura_das_asas(envergadura_das_asas) { }
@@ -45,11 +45,25 @@ std::ostream& Ave::print(std::ostream& os) const {
 					  << "Nome de Batismo: " << m_nome_batismo << endl
 					  << "Tamanho do bico (cm): " << m_tamanho_do_bico_cm << endl
 					  << "Envergadura das asas: " << m_envergadura_das_asas << endl;
-} 
+}
 
 void Ave::escreverEmArquivo(){
-	std::cout << "Pegadinha do malandro" << std::endl;
-	return;
+	std::ofstream arquivo ("Animais.csv");
+	if (arquivo) {
+		arquivo.seekp (0, arquivo.end);
+		arquivo
+		 			<< m_id << ";"
+					<< m_classe << ";"
+					<< m_nome_cientifico << ";"
+					<< m_sexo << ";"
+					<< m_tamanho << ";"
+					<< m_dieta << ";"
+					<< m_veterinario->get_m_id() << ";"
+					<< m_tratador->get_m_id() << ";"
+					<< m_nome_batismo << ";" << std::endl;
+	} else {
+		std::cerr << "Falha ao escrever em Animais.csv" << std::endl;
+	}
 }
 
 void Ave::alterarDado(){

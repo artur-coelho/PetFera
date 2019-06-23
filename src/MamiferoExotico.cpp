@@ -31,4 +31,23 @@ std::ostream& MamiferoExotico::print(std::ostream& os) const {
 					  << "Cor do pelo: " << m_cor_pelo << endl
 					  << "Autorização do IBAMA: " << m_autorizacao_ibama << endl
 					  << "País de origem: " << m_pais_origem << endl;
-} 
+}
+
+void MamiferoExotico::escreverEmArquivo(){
+	std::ofstream arquivo ("Animais.csv");
+	if (arquivo) {
+		arquivo.seekp (0, arquivo.end);
+		arquivo
+		 			<< m_id << ";"
+					<< m_classe << ";"
+					<< m_nome_cientifico << ";"
+					<< m_sexo << ";"
+					<< m_tamanho << ";"
+					<< m_dieta << ";"
+					<< m_veterinario->get_m_id() << ";"
+					<< m_tratador->get_m_id() << ";"
+					<< m_nome_batismo << ";" << std::endl;
+	} else {
+		std::cerr << "Falha ao escrever em Animais.csv" << std::endl;
+	}
+}

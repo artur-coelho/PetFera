@@ -12,23 +12,23 @@ class AveExotico : public Ave, AnimalExotico {
 		AveExotico();
 		AveExotico(int id, std::string classe, std::string nome_cientifico,
 		 	   char sexo, double tamanho, std::string dieta, Veterinario* veterinario,
-		 	   Tratador* tratador, std::string nome_batismo, double tamanho_do_bico_cm, 
+		 	   Tratador* tratador, std::string nome_batismo, double tamanho_do_bico_cm,
 		 	   double envergadura_das_asas, std::string autorizacao_ibama, std::string pais_origem);
 		~AveExotico();
 		// } construtores e destrutores
-		
+
 		// getters {
-		
+
 		// } getters
 
 		// setters {
-		
-		// } setters
 
+		// } setters
+		void escreverEmArquivo();
 
 	protected:
 		// membros {
-		
+
 		// } membros
 };
 

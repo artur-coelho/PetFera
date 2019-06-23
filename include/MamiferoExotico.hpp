@@ -16,18 +16,19 @@ class MamiferoExotico : public Mamifero, AnimalExotico {
 		 	   std::string autorizacao_ibama, std::string pais_origem);
 		~MamiferoExotico();
 		// } construtores e destrutores
-		
+
 		// getters {
-		
+
 		// } getters
 
 		// setters {
-		
+
 		// } setters
+		void escreverEmArquivo();
 
 	protected:
 		// membros {
-		
+
 		// } membros
 };
 

@@ -1,3 +1,5 @@
-Lembrar de colocar o ; para separar os dados nas funções print()
-lembrar de colocar os parâmetros nos construtores na interface.cpp
 validar se é mesmo um tratador ou veterinario que está sendo associado a um animal quando usamos o id na interface
+verificar se o id que está sendo cadastrado já não existe no banco de dados
+se tiver 0 no id do veterinario ou tratador, não devemos tentar acessar algo deles a partir do animal
+fazer os outros animais guardarem em um arquivo
+guardar arquivo funcionarios

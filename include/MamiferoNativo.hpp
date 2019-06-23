@@ -16,18 +16,19 @@ class MamiferoNativo : public Mamifero, AnimalNativo {
 		 	   std::string autorizacao_ibama, std::string uf_origem);
 		~MamiferoNativo();
 		// } construtores e destrutores
-		
+
 		// getters {
-		
+
 		// } getters
 
 		// setters {
-		
+
 		// } setters
+		void escreverEmArquivo();
 
 	protected:
 		// membros {
-		
+
 		// } membros
 };
 
