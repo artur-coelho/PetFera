@@ -11,7 +11,7 @@ class Funcionario {
 	public:
 		//construtores e destrutores {
 		Funcionario();
-		Funcionario(int id, std::string nome, std::string cpf, short idade, 
+		Funcionario(int id, std::string nome, std::string cpf, short idade,
 					std::string tipo_sanguineo, char fator_rh, std::string especialidade);
 		~Funcionario();
 		//	} construtores e destrutores
@@ -37,9 +37,7 @@ class Funcionario {
 		// } setters
 
 		virtual void escreverEmArquivo() = 0;
-		virtual void alterarDado() = 0;
-		virtual void imprime_funcionario() = 0;
-		
+
 		//operadores
 		friend std::ostream& operator<<(std::ostream& os, const Funcionario& funcionario);
 

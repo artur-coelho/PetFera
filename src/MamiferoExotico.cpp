@@ -46,7 +46,11 @@ void MamiferoExotico::escreverEmArquivo(){
 					<< m_dieta << ";"
 					<< m_veterinario->get_m_id() << ";"
 					<< m_tratador->get_m_id() << ";"
-					<< m_nome_batismo << ";" << std::endl;
+					<< m_nome_batismo << ";"
+					<< m_cor_pelo << ";"
+					<< m_autorizacao_ibama << ";"
+					<< m_pais_origem << ";"
+					<< std::endl;
 	} else {
 		std::cerr << "Falha ao escrever em Animais.csv" << std::endl;
 	}

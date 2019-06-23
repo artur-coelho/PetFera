@@ -58,7 +58,10 @@ void Anfibio::escreverEmArquivo(){
 					<< m_dieta << ";"
 					<< m_veterinario->get_m_id() << ";"
 					<< m_tratador->get_m_id() << ";"
-					<< m_nome_batismo << ";" << std::endl;
+					<< m_nome_batismo << ";"
+					<< m_total_de_mudas << ";"
+					<< m_ultima_muda << ";"
+					<< std::endl;
 	} else {
 		std::cerr << "Falha ao escrever em Animais.csv" << std::endl;
 	}

@@ -22,10 +22,10 @@ void PetFera::remover(Funcionario* funcionario_eliminado) {
 
 void PetFera::alterar(int id, char baseDados) {
 	if(baseDados == 'f') {
-		funcionarios[id]->alterarDado();
+		//funcionarios[id]->alterarDado();
 	}
 	if(baseDados == 'a') {
-		animais[id]->alterarDado();
+		//animais[id]->alterarDado();
 	}
 	if(!(baseDados == 'a' || baseDados == 'f')) {
 		std::cout << "Error" << std::endl;

@@ -60,7 +60,10 @@ void Ave::escreverEmArquivo(){
 					<< m_dieta << ";"
 					<< m_veterinario->get_m_id() << ";"
 					<< m_tratador->get_m_id() << ";"
-					<< m_nome_batismo << ";" << std::endl;
+					<< m_nome_batismo << ";"
+					<< m_tamanho_do_bico_cm << ";"
+					<< m_envergadura_das_asas << ";"
+					<< std::endl;
 	} else {
 		std::cerr << "Falha ao escrever em Animais.csv" << std::endl;
 	}
