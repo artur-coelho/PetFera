@@ -1,15 +1,34 @@
+/**
+* @file	Animal.cpp
+* @brief	Implementação da classe que representa os animais
+* @author	Alvaro	Prudencio Araujo
+* @author	Artur Augusto Rocha Coelho
+* @author	Song Jong Márcio Simoni da Costa
+* @since	07/05/2019
+* @date	26/06/2019
+*/
+
+
 #include "Animal.hpp"
 
-// construtores e destrutores {
-Animal::Animal() {}
+/**
+* @brief	Construtor padrão da classe Animal
+*/
+Animal::Animal() { }
+/**
+* @brief	Construtor parametrizado da classe Animal
+*/
 Animal::Animal(int id, std::string classe, std::string nome_cientifico, char sexo,
 			   double tamanho, std::string dieta, Veterinario* veterinario,
 		 	   Tratador* tratador, std::string nome_batismo) : 
 				m_id(id), m_classe(classe), m_nome_cientifico(nome_cientifico),
 				m_sexo(sexo), m_tamanho(tamanho), m_dieta(dieta), m_veterinario(veterinario),
 				m_tratador(tratador), m_nome_batismo(nome_batismo) { } 
-Animal::~Animal() {}
-// } construtores e destrutores
+/**
+* @brief	Destrutor da classe Animal
+*/
+Animal::~Animal() { }
+
 
 // getters {
 int Animal::get_m_id(void) {
@@ -87,9 +106,10 @@ void Animal::set_m_nome_batismo(std::string nome_batismo) {
 }
 // } setters
 
-//operadores {
+/**
+* @brief	Sobrecarga do operador de extração
+*/
 std::ostream& operator<<(std::ostream& os, const Animal& animal) {
 			return animal.print(os);
 		}
 	
-// } operadores

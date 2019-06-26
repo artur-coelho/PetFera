@@ -1,3 +1,13 @@
+/**
+* @file	Ave.hpp
+* @brief	Classe que representa as aves
+* @author	Alvaro	Prudencio Araujo
+* @author	Artur Augusto Rocha Coelho
+* @author	Song Jong Márcio Simoni da Costa
+* @since	07/05/2019
+* @date	26/06/2019
+*/
+
 #ifndef _AVE_HPP_
 #define _AVE_HPP_
 
@@ -34,8 +44,8 @@ class Ave : public Animal {
 
 	protected:
 		// membros {
-		double m_tamanho_do_bico_cm;
-		double m_envergadura_das_asas;
+		double m_tamanho_do_bico_cm;	/**< Define o tamanho do bico da ave em centímetros */
+		double m_envergadura_das_asas;	/**< Define o tamanho da envergadura das asas */
 		// } membros
 };
 

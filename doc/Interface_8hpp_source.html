@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PetFera: Código-Fonte de include/Interface.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PetFera
+   </div>
+   <div id="projectbrief">Um projeto que consiste em um pequeno sistema para gerenciamento de um pet shop</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Interface.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Interface_8hpp.html">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef _INTERFACE_HPP_</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define _INTERFACE_HPP_</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="PetFera_8hpp.html">PetFera.hpp</a>&quot;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classInterface.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classInterface.html">Interface</a> {</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classInterface.html#a87dd3a5ef7e88a34c074db93aca1df89">boasVindas</a>();</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classInterface.html#a76ebca256afb620ca4ae2154f078448a">optInvalida</a>();</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classInterface.html#a369c7fceb7acfec2b8cf8452a832aab5">menu</a>();</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classInterface.html#a117418d317ed4a13a0175162b4002a37">cadastrar</a>();</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classInterface.html#a058ff06adf7cbc6d91c594f27abd537b">remover</a>();</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classInterface.html#a37aaa3147364dba4035b460cce1704fd">alterar</a>();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classInterface.html#a16e9b5712ba43c630a2b800283aa7ed9">consultar</a>();</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classInterface.html#a79aebd89118efac68645f919b7713b4e">sair</a>();</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classInterface.html#a953c34ea1b8975da4338fe81c5b5d3db">cadastrarFuncionario</a>();</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classInterface.html#a9048b68db49ef4cd98b39b8a9e895f3c">cadastrarAnimal</a>();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classInterface.html#acea9b057d49836449f88a12cae11a7c4">removerFuncionario</a>();</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classInterface.html#a3670c230d1d265f4c443511dd9aa16c1">removerAnimal</a>();</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classInterface.html#a1720b595cebcd0ee9cdb4d95eb10d056">alterarFuncionario</a>();</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classInterface.html#a6b9a3b2f0872b93aa0d52e405777ebeb">alterarAnimal</a>();</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classInterface.html#adb3e940c06f89f020c3a0034ebc14ef1">consultarFuncionario</a>();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classInterface.html#aa142755d0dcf235e73d6477a5705b6b7">consultarAnimal</a>();</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="classPetFera.html">PetFera</a> loja;   </div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="PetFera_8hpp_html"><div class="ttname"><a href="PetFera_8hpp.html">PetFera.hpp</a></div><div class="ttdoc">Classe que representa o petshop. </div></div>
+<div class="ttc" id="classInterface_html_a76ebca256afb620ca4ae2154f078448a"><div class="ttname"><a href="classInterface.html#a76ebca256afb620ca4ae2154f078448a">Interface::optInvalida</a></div><div class="ttdeci">void optInvalida()</div><div class="ttdoc">Informa ao usuário se ele tiver escolhido uma opção inválida. </div><div class="ttdef"><b>Definition:</b> Interface.cpp:25</div></div>
+<div class="ttc" id="classInterface_html_adb3e940c06f89f020c3a0034ebc14ef1"><div class="ttname"><a href="classInterface.html#adb3e940c06f89f020c3a0034ebc14ef1">Interface::consultarFuncionario</a></div><div class="ttdeci">void consultarFuncionario()</div><div class="ttdoc">Consulta os dados de um funcionário. </div><div class="ttdef"><b>Definition:</b> Interface.cpp:479</div></div>
+<div class="ttc" id="classInterface_html_a1720b595cebcd0ee9cdb4d95eb10d056"><div class="ttname"><a href="classInterface.html#a1720b595cebcd0ee9cdb4d95eb10d056">Interface::alterarFuncionario</a></div><div class="ttdeci">void alterarFuncionario()</div><div class="ttdoc">Altera os dados de um funcionário. </div><div class="ttdef"><b>Definition:</b> Interface.cpp:465</div></div>
+<div class="ttc" id="classInterface_html_a87dd3a5ef7e88a34c074db93aca1df89"><div class="ttname"><a href="classInterface.html#a87dd3a5ef7e88a34c074db93aca1df89">Interface::boasVindas</a></div><div class="ttdeci">void boasVindas()</div><div class="ttdoc">Carrega os dados da loja e chama o menu para interação com o usuário. </div><div class="ttdef"><b>Definition:</b> Interface.cpp:16</div></div>
+<div class="ttc" id="classInterface_html_a953c34ea1b8975da4338fe81c5b5d3db"><div class="ttname"><a href="classInterface.html#a953c34ea1b8975da4338fe81c5b5d3db">Interface::cadastrarFuncionario</a></div><div class="ttdeci">void cadastrarFuncionario()</div><div class="ttdoc">Cadastro de um funcionário. </div><div class="ttdef"><b>Definition:</b> Interface.cpp:214</div></div>
+<div class="ttc" id="classInterface_html_a6b9a3b2f0872b93aa0d52e405777ebeb"><div class="ttname"><a href="classInterface.html#a6b9a3b2f0872b93aa0d52e405777ebeb">Interface::alterarAnimal</a></div><div class="ttdeci">void alterarAnimal()</div><div class="ttdoc">Altera os dados de um animal. </div><div class="ttdef"><b>Definition:</b> Interface.cpp:472</div></div>
+<div class="ttc" id="classInterface_html_a117418d317ed4a13a0175162b4002a37"><div class="ttname"><a href="classInterface.html#a117418d317ed4a13a0175162b4002a37">Interface::cadastrar</a></div><div class="ttdeci">void cadastrar()</div><div class="ttdoc">Chama o método para cadastro de um animal ou funcionário. </div><div class="ttdef"><b>Definition:</b> Interface.cpp:74</div></div>
+<div class="ttc" id="classPetFera_html"><div class="ttname"><a href="classPetFera.html">PetFera</a></div><div class="ttdef"><b>Definition:</b> PetFera.hpp:44</div></div>
+<div class="ttc" id="classInterface_html"><div class="ttname"><a href="classInterface.html">Interface</a></div><div class="ttdef"><b>Definition:</b> Interface.hpp:16</div></div>
+<div class="ttc" id="classInterface_html_a369c7fceb7acfec2b8cf8452a832aab5"><div class="ttname"><a href="classInterface.html#a369c7fceb7acfec2b8cf8452a832aab5">Interface::menu</a></div><div class="ttdeci">void menu()</div><div class="ttdoc">Menu para interação com o usuário. </div><div class="ttdef"><b>Definition:</b> Interface.cpp:32</div></div>
+<div class="ttc" id="classInterface_html_a9048b68db49ef4cd98b39b8a9e895f3c"><div class="ttname"><a href="classInterface.html#a9048b68db49ef4cd98b39b8a9e895f3c">Interface::cadastrarAnimal</a></div><div class="ttdeci">void cadastrarAnimal()</div><div class="ttdoc">Cadastro de um animal. </div><div class="ttdef"><b>Definition:</b> Interface.cpp:279</div></div>
+<div class="ttc" id="classInterface_html_a16e9b5712ba43c630a2b800283aa7ed9"><div class="ttname"><a href="classInterface.html#a16e9b5712ba43c630a2b800283aa7ed9">Interface::consultar</a></div><div class="ttdeci">void consultar()</div><div class="ttdoc">Chama o método para consultar os dados de um funcionário ou animal. </div><div class="ttdef"><b>Definition:</b> Interface.cpp:173</div></div>
+<div class="ttc" id="classInterface_html_aa142755d0dcf235e73d6477a5705b6b7"><div class="ttname"><a href="classInterface.html#aa142755d0dcf235e73d6477a5705b6b7">Interface::consultarAnimal</a></div><div class="ttdeci">void consultarAnimal()</div><div class="ttdoc">Consulta os dados de um animal. </div><div class="ttdef"><b>Definition:</b> Interface.cpp:486</div></div>
+<div class="ttc" id="classInterface_html_a058ff06adf7cbc6d91c594f27abd537b"><div class="ttname"><a href="classInterface.html#a058ff06adf7cbc6d91c594f27abd537b">Interface::remover</a></div><div class="ttdeci">void remover()</div><div class="ttdoc">Chama o método para remoção de um funcionário ou animal. </div><div class="ttdef"><b>Definition:</b> Interface.cpp:107</div></div>
+<div class="ttc" id="classInterface_html_a37aaa3147364dba4035b460cce1704fd"><div class="ttname"><a href="classInterface.html#a37aaa3147364dba4035b460cce1704fd">Interface::alterar</a></div><div class="ttdeci">void alterar()</div><div class="ttdoc">Chama o método para alterar os dados de um funcionário ou animal. </div><div class="ttdef"><b>Definition:</b> Interface.cpp:140</div></div>
+<div class="ttc" id="classInterface_html_acea9b057d49836449f88a12cae11a7c4"><div class="ttname"><a href="classInterface.html#acea9b057d49836449f88a12cae11a7c4">Interface::removerFuncionario</a></div><div class="ttdeci">void removerFuncionario()</div><div class="ttdoc">Remove um funcionário. </div><div class="ttdef"><b>Definition:</b> Interface.cpp:451</div></div>
+<div class="ttc" id="classInterface_html_a79aebd89118efac68645f919b7713b4e"><div class="ttname"><a href="classInterface.html#a79aebd89118efac68645f919b7713b4e">Interface::sair</a></div><div class="ttdeci">void sair()</div><div class="ttdoc">Salva o que foi modificado e encerra o programa. </div><div class="ttdef"><b>Definition:</b> Interface.cpp:206</div></div>
+<div class="ttc" id="classInterface_html_a3670c230d1d265f4c443511dd9aa16c1"><div class="ttname"><a href="classInterface.html#a3670c230d1d265f4c443511dd9aa16c1">Interface::removerAnimal</a></div><div class="ttdeci">void removerAnimal()</div><div class="ttdoc">Remove um animal. </div><div class="ttdef"><b>Definition:</b> Interface.cpp:458</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

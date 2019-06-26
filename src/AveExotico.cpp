@@ -1,7 +1,22 @@
+/**
+* @file	AveExotico.cpp
+* @brief	Implementação da classe que representa as aves exóticas
+* @author	Alvaro	Prudencio Araujo
+* @author	Artur Augusto Rocha Coelho
+* @author	Song Jong Márcio Simoni da Costa
+* @since	07/05/2019
+* @date	26/06/2019
+*/
+
 #include "AveExotico.hpp"
 
-// construtores e destrutores {
-AveExotico::AveExotico() {}
+/**
+* @brief	Construtor padrão da classe AveExotico
+*/
+AveExotico::AveExotico() { }
+/**
+* @brief	Construtor parametrizado da classe AveExotico
+*/
 AveExotico::AveExotico(int id, std::string classe, std::string nome_cientifico,
 		 	   char sexo, double tamanho, std::string dieta, Veterinario* veterinario,
 		 	   Tratador* tratador, std::string nome_batismo, double tamanho_do_bico_cm,
@@ -9,8 +24,11 @@ AveExotico::AveExotico(int id, std::string classe, std::string nome_cientifico,
 		 	   Ave(id, classe, nome_cientifico,	sexo, tamanho, dieta, veterinario,
 		 	   tratador, nome_batismo, tamanho_do_bico_cm, envergadura_das_asas),
 		 	   AnimalExotico(autorizacao_ibama, pais_origem) { }
-AveExotico::~AveExotico() {}
-// } construtores e destrutores
+/**
+* @brief	Destrutor da classe AveExotico
+*/
+AveExotico::~AveExotico() { }
+/
 
 // getters {
 // } getters
@@ -18,6 +36,9 @@ AveExotico::~AveExotico() {}
 // setters {
 // } setters
 
+/**
+* @brief	Sobrecarga da função print da biblioteca ostream
+*/
 std::ostream& AveExotico::print(std::ostream& os) const {
 			return os << "ID: " << m_id << endl
 					  << "Classe: " << m_classe << endl
@@ -34,6 +55,9 @@ std::ostream& AveExotico::print(std::ostream& os) const {
 					  << "País de origem: " << m_pais_origem << endl;
 }
 
+/**
+* @brief	Método que escreve os dados da Ave em um arquivo
+*/
 void AveExotico::escreverEmArquivo(){
 	std::ofstream arquivo ("Animais.csv");
 	if (arquivo) {

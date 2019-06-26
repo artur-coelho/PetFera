@@ -1,3 +1,13 @@
+/**
+* @file	Repitl.hpp
+* @brief	Classe que representa os répteis
+* @author	Alvaro	Prudencio Araujo
+* @author	Artur Augusto Rocha Coelho
+* @author	Song Jong Márcio Simoni da Costa
+* @since	07/05/2019
+* @date	26/06/2019
+*/
+
 #ifndef _REPTIL_HPP_
 #define _REPTIL_HPP_
 
@@ -32,8 +42,8 @@ class Reptil : public Animal {
 
 	protected:
 		// membros {
-		bool m_venenoso;
-		std::string m_tipo_veneno;
+		bool m_venenoso;	/**< Define se o animal é venenoso ou não */
+		std::string m_tipo_veneno;	/**< Define o tipo do veneno do animal */
 		// } membros
 };
 

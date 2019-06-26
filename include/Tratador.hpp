@@ -1,3 +1,14 @@
+/**
+* @file	Tratador.hpp
+* @brief	Classe que representa os tratadores dos animais
+* @author	Alvaro	Prudencio Araujo
+* @author	Artur Augusto Rocha Coelho
+* @author	Song Jong Márcio Simoni da Costa
+* @since	07/05/2019
+* @date	26/06/2019
+*/
+
+
 #ifndef _TRATADOR_HPP_
 #define _TRATADOR_HPP_
 
@@ -28,7 +39,7 @@ class Tratador : public Funcionario {
 
 	protected:
 		// membros {
-		int m_nivel_de_seguranca;
+		int m_nivel_de_seguranca;	/**< Define o nível de segurança do tratador
 		// } membros
 };
 

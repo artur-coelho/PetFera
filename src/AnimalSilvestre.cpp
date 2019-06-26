@@ -1,11 +1,29 @@
+/**
+* @file	AnimalSilvestre.cpp
+* @brief	Implementação da classe que representa os animais silvestres
+* @author	Alvaro	Prudencio Araujo
+* @author	Artur Augusto Rocha Coelho
+* @author	Song Jong Márcio Simoni da Costa
+* @since	07/05/2019
+* @date	26/06/2019
+*/
+
 #include "AnimalSilvestre.hpp"
 
-// construtores e destrutores {
-AnimalSilvestre::AnimalSilvestre() {}
+/**
+* @brief	Construtor padrão da classe AnimalSilvestre
+*/
+AnimalSilvestre::AnimalSilvestre() { }
+/**
+* @brief	Construtor parametrizado da classe AnimalSilvestre
+*/
 AnimalSilvestre::AnimalSilvestre(std::string autorizacao_ibama) :
 								m_autorizacao_ibama(autorizacao_ibama) { }
-AnimalSilvestre::~AnimalSilvestre() {}
-// } construtores e destrutores
+/**
+* @brief	Destrutor da classe AnimalSilvestre
+*/
+AnimalSilvestre::~AnimalSilvestre() { }
+
 
 // getters {
 std::string AnimalSilvestre::get_m_autorizacao_ibama(void) {

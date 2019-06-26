@@ -1,15 +1,34 @@
+/**
+* @file	Interface.cpp
+* @brief	Implementação da classe que representa a interface do projeto
+* @author	Alvaro	Prudencio Araujo
+* @author	Artur Augusto Rocha Coelho
+* @author	Song Jong Márcio Simoni da Costa
+* @since	07/05/2019
+* @date	26/06/2019
+*/
+
 #include "Interface.hpp"
 
+/**
+* @brief	Carrega os dados da loja e chama o menu para interação com o usuário
+*/
 void Interface::boasVindas() {
 	loja.carregar();
 	std::cout << std::endl << "Bem vindo ao PetFera do grupo Dolinho!" << std::endl;
 	menu();
 }
 
+/**
+* @brief	Informa ao usuário se ele tiver escolhido uma opção inválida
+*/
 void Interface::optInvalida() {
 	std::cout << "Opcao invalida!" << std::endl;
 }
 
+/**
+* @brief	Menu para interação com o usuário
+*/
 void Interface::menu() {
 	char opt;
 	std::cout <<
@@ -49,6 +68,9 @@ void Interface::menu() {
 	}
 }
 
+/**
+* @brief	Chama o método para cadastro de um animal ou funcionário	
+*/
 void Interface::cadastrar() {
 	char opt;
 	std::cout <<
@@ -79,6 +101,9 @@ void Interface::cadastrar() {
 	}
 }
 
+/**
+* @brief	Chama o método para remoção de um funcionário ou animal
+*/
 void Interface::remover() {
 	char opt;
 	std::cout <<
@@ -109,6 +134,9 @@ void Interface::remover() {
 	}
 }
 
+/**
+* @brief Chama o método para alterar os dados de um funcionário ou animal
+*/
 void Interface::alterar() {
 	char opt;
 	std::cout <<
@@ -139,6 +167,9 @@ void Interface::alterar() {
 	}
 }
 
+/**
+* @brief	Chama o método para consultar os dados de um funcionário ou animal
+*/
 void Interface::consultar() {
 	char opt;
 	std::cout <<
@@ -169,11 +200,17 @@ void Interface::consultar() {
 	}
 }
 
+/**
+* @brief Salva o que foi modificado e encerra o programa
+*/
 void Interface::sair() {
 	loja.salvar();
 	std::cout << std::endl << "Obrigado e volte sempre!" << std::endl;
 }
 
+/**
+* @brief Cadastro de um funcionário
+*/
 void Interface::cadastrarFuncionario() {
 	Funcionario* novoFuncionario;
 	int id;
@@ -236,6 +273,9 @@ void Interface::cadastrarFuncionario() {
 	menu();
 }
 
+/**
+* @brief Cadastro de um animal
+*/
 void Interface::cadastrarAnimal() {
 	Animal* novoAnimal;
 	char anf_mam_rep_ave, nativo_exotico, silvestre_domestico;
@@ -405,26 +445,44 @@ void Interface::cadastrarAnimal() {
 	menu();
 }
 
+/**
+* @brief Remove um funcionário
+*/
 void Interface::removerFuncionario() {
 	std::cout << "Ainda nao tenho nada" << std::endl;
 }
 
+/**
+* @brief Remove um animal
+*/
 void Interface::removerAnimal() {
 	std::cout << "Ainda nao tenho nada" << std::endl;
 }
 
+/**
+* @brief Altera os dados de um funcionário
+*/
 void Interface::alterarFuncionario() {
 	std::cout << "Ainda nao tenho nada" << std::endl;
 }
 
+/**
+* @brief Altera os dados de um animal
+*/
 void Interface::alterarAnimal() {
 	std::cout << "Ainda nao tenho nada" << std::endl;
 }
 
+/**
+* @brief Consulta os dados de um funcionário
+*/
 void Interface::consultarFuncionario() {
 	std::cout << "Ainda nao tenho nada" << std::endl;
 }
 
+/**
+* @brief Consulta os dados de um animal
+*/
 void Interface::consultarAnimal() {
 	std::cout << "Ainda nao tenho nada" << std::endl;
 }

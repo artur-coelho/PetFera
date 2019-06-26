@@ -1,3 +1,13 @@
+/**
+* @file	Animal.hpp
+* @brief	Classe que representa os animais
+* @author	Alvaro	Prudencio Araujo
+* @author	Artur Augusto Rocha Coelho
+* @author	Song Jong Márcio Simoni da Costa
+* @since	07/05/2019
+* @date	26/06/2019
+*/
+
 #ifndef _ANIMAL_HPP_
 #define _ANIMAL_HPP_
 
@@ -50,15 +60,15 @@ class Animal {
 
 	protected:
 		// membros {
-		int m_id;
-		std::string m_classe;
-		std::string m_nome_cientifico;
-		char m_sexo;
-		double m_tamanho;
-		std::string m_dieta;
-		Veterinario* m_veterinario;
-		Tratador* m_tratador;
-		std::string m_nome_batismo;
+		int m_id;	//*< Define o id do animal */
+		std::string m_classe;	//*< Define a classe a qual o animal pertence */
+		std::string m_nome_cientifico;	//*< Define o nome científico do animal */
+		char m_sexo;	//*< Define o sexo do animal */
+		double m_tamanho;	//*< Define o tamanho do animal */
+		std::string m_dieta;	//*< Define a dieta do animal */
+		Veterinario* m_veterinario;	//*< Define qual o veterinário associado ao animal */
+		Tratador* m_tratador;	//*< Define qual o tratador associado ao animal */
+		std::string m_nome_batismo;	//*< Define qual o nome de batismo do animal */
 		// } membros
 };
 

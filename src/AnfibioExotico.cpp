@@ -1,7 +1,23 @@
+/**
+* @file	AnifibioExotico.cpp
+* @brief	Implementação da classe que representa os anfíbios
+* @author	Alvaro	Prudencio Araujo
+* @author	Artur Augusto Rocha Coelho
+* @author	Song Jong Márcio Simoni da Costa
+* @since	07/05/2019
+* @date	26/06/2019
+*/
+
 #include "AnfibioExotico.hpp"
 
-// construtores e destrutores {
-AnfibioExotico::AnfibioExotico() {}
+/**
+* @brief	Construtor padrão da classe AnfibioExotico
+*/
+AnfibioExotico::AnfibioExotico() { }
+
+/**
+* @brief	Construtor parametrizado da classe AnfibioExotico
+*/
 AnfibioExotico::AnfibioExotico(int id, std::string classe, std::string nome_cientifico, char sexo,
 		 	   double tamanho, std::string dieta, Veterinario* veterinario,
 		 	   Tratador* tratador, std::string nome_batismo, int total_de_mudas, Date ultima_muda,
@@ -9,9 +25,15 @@ AnfibioExotico::AnfibioExotico(int id, std::string classe, std::string nome_cien
 			   Anfibio(id, classe, nome_cientifico, sexo, tamanho, dieta, veterinario,
 			   tratador, nome_batismo, total_de_mudas, ultima_muda),
 			   AnimalExotico(autorizacao_ibama, pais_origem) { }
-AnfibioExotico::~AnfibioExotico() {}
-// } construtores e destrutores
 
+/**
+* @brief Destrutor da classe AnfibioExotico
+*/
+AnfibioExotico::~AnfibioExotico() {}
+
+/**
+* @brief	Sobrecarga da função print da biblioteca ostream
+*/
 std::ostream& AnfibioExotico::print(std::ostream& os) const {
 			return os << "ID: " << m_id << endl
 					  << "Classe: " << m_classe << endl
@@ -28,6 +50,9 @@ std::ostream& AnfibioExotico::print(std::ostream& os) const {
 					  << "País de origem: " << m_pais_origem << endl;
 }
 
+/**
+* @brief	Método que escreve os dados do anfibio exótico em um arquivo
+*/
 void AnfibioExotico::escreverEmArquivo(){
 	std::ofstream arquivo ("Animais.csv");
 	if (arquivo) {

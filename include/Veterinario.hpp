@@ -1,3 +1,13 @@
+/**
+* @file	Veterinario.hpp
+* @brief	Classe que representa os veterinários
+* @author	Alvaro	Prudencio Araujo
+* @author	Artur Augusto Rocha Coelho
+* @author	Song Jong Márcio Simoni da Costa
+* @since	07/05/2019
+* @date	26/06/2019
+*/
+
 #ifndef _VETERINARIO_HPP_
 #define _VETERINARIO_HPP_
 
@@ -29,7 +39,7 @@ class Veterinario : public Funcionario {
 
 	protected:
 		// membros {
-		std::string m_crmv;
+		std::string m_crmv;	/**< Define a crmv do veterinário
 		// } membros
 };
 

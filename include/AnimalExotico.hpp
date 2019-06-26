@@ -1,3 +1,13 @@
+/**
+* @file	AnimalExotico.hpp
+* @brief	Classe que representa os animais exoticos
+* @author	Alvaro	Prudencio Araujo
+* @author	Artur Augusto Rocha Coelho
+* @author	Song Jong Márcio Simoni da Costa
+* @since	07/05/2019
+* @date	26/06/2019
+*/
+
 #ifndef _ANIMAL_EXOTICO_HPP_
 #define _ANIMAL_EXOTICO_HPP_ 
 
@@ -23,7 +33,7 @@ class AnimalExotico : public AnimalSilvestre {
 
 	protected:
 		// membros {
-		std::string m_pais_origem;
+		std::string m_pais_origem;	/**< Define o país de origem do animal exótico */
 		// } membros
 };
 

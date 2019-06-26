@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PetFera: Código-Fonte de include/Funcionario.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PetFera
+   </div>
+   <div id="projectbrief">Um projeto que consiste em um pequeno sistema para gerenciamento de um pet shop</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Funcionario.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Funcionario_8hpp.html">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef _FUNCIONARIO_HPP_</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define _FUNCIONARIO_HPP_</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classFuncionario.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classFuncionario.html">Funcionario</a> {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">virtual</span> std::ostream&amp; print(std::ostream&amp;) <span class="keyword">const</span> = 0;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="comment">//construtores e destrutores {</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="classFuncionario.html#a7cd39b2c6cd2449162481a8c0e7a2429">Funcionario</a>();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="classFuncionario.html#a7cd39b2c6cd2449162481a8c0e7a2429">Funcionario</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, std::string nome, std::string cpf, <span class="keywordtype">short</span> idade,</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                    std::string tipo_sanguineo, <span class="keywordtype">char</span> fator_rh, std::string especialidade);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="classFuncionario.html#a800273bd909dc88f821a414abebc442c">~Funcionario</a>();</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="comment">//  } construtores e destrutores</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="comment">// getters {</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">int</span> get_m_id(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        std::string get_m_nome(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        std::string get_m_cpf(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordtype">short</span> get_m_idade(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        std::string get_m_tipo_sanguineo(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordtype">char</span> get_m_fator_rh(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        std::string get_m_especialidade(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="comment">// } getters</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="comment">// setters {</span></div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordtype">void</span> set_m_id(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordtype">void</span> set_m_nome(std::string nome);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordtype">void</span> set_m_cpf(std::string cpf);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">void</span> set_m_idade(<span class="keywordtype">short</span> idade);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordtype">void</span> set_m_tipo_sanguineo(std::string tipo_sanguineo);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">void</span> set_m_fator_rh(<span class="keywordtype">char</span> fator_rh);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">void</span> set_m_especialidade(std::string especialidade);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="comment">// } setters</span></div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> escreverEmArquivo() = 0;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="comment">//operadores</span></div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keyword">friend</span> std::ostream&amp; <a class="code" href="classFuncionario.html#abc81f1af6f17d0cc9484e166a94ff4fe">operator&lt;&lt;</a>(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classFuncionario.html">Funcionario</a>&amp; funcionario);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">protected</span>:</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="comment">// membros {</span></div><div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classFuncionario.html#a123c4af00e4e6eea5d4d9366a8bfefed">   56</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classFuncionario.html#a123c4af00e4e6eea5d4d9366a8bfefed">m_id</a>;   </div><div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classFuncionario.html#a6d5228656aa32b0f36f02e08c51cd1e4">   57</a></span>&#160;        std::string <a class="code" href="classFuncionario.html#a6d5228656aa32b0f36f02e08c51cd1e4">m_nome</a>; </div><div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classFuncionario.html#a74bd5f4c71bfb42219f0cce2a72eeb47">   58</a></span>&#160;        std::string <a class="code" href="classFuncionario.html#a74bd5f4c71bfb42219f0cce2a72eeb47">m_cpf</a>;  </div><div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classFuncionario.html#a2bc5a68aebcf1a792812430ce5c8bdca">   59</a></span>&#160;        <span class="keywordtype">short</span> <a class="code" href="classFuncionario.html#a2bc5a68aebcf1a792812430ce5c8bdca">m_idade</a>;  </div><div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classFuncionario.html#aa09cfc8a989b1a292cd21380a5fcb8bc">   60</a></span>&#160;        std::string <a class="code" href="classFuncionario.html#aa09cfc8a989b1a292cd21380a5fcb8bc">m_tipo_sanguineo</a>;   </div><div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classFuncionario.html#ab8b1fa2c4d830ea6a03c5d1db8ee1002">   61</a></span>&#160;        <span class="keywordtype">char</span> <a class="code" href="classFuncionario.html#ab8b1fa2c4d830ea6a03c5d1db8ee1002">m_fator_rh</a>;    </div><div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classFuncionario.html#ac9ccf61efca75f4130e79ef06b7278a2">   62</a></span>&#160;        std::string <a class="code" href="classFuncionario.html#ac9ccf61efca75f4130e79ef06b7278a2">m_especialidade</a>;    </div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="comment">// } membros</span></div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classFuncionario_html_a7cd39b2c6cd2449162481a8c0e7a2429"><div class="ttname"><a href="classFuncionario.html#a7cd39b2c6cd2449162481a8c0e7a2429">Funcionario::Funcionario</a></div><div class="ttdeci">Funcionario()</div><div class="ttdoc">Construtor padrão da classe Funcionario. </div><div class="ttdef"><b>Definition:</b> Funcionario.cpp:16</div></div>
+<div class="ttc" id="classFuncionario_html_a2bc5a68aebcf1a792812430ce5c8bdca"><div class="ttname"><a href="classFuncionario.html#a2bc5a68aebcf1a792812430ce5c8bdca">Funcionario::m_idade</a></div><div class="ttdeci">short m_idade</div><div class="ttdef"><b>Definition:</b> Funcionario.hpp:59</div></div>
+<div class="ttc" id="classFuncionario_html_a123c4af00e4e6eea5d4d9366a8bfefed"><div class="ttname"><a href="classFuncionario.html#a123c4af00e4e6eea5d4d9366a8bfefed">Funcionario::m_id</a></div><div class="ttdeci">int m_id</div><div class="ttdef"><b>Definition:</b> Funcionario.hpp:56</div></div>
+<div class="ttc" id="classFuncionario_html_a6d5228656aa32b0f36f02e08c51cd1e4"><div class="ttname"><a href="classFuncionario.html#a6d5228656aa32b0f36f02e08c51cd1e4">Funcionario::m_nome</a></div><div class="ttdeci">std::string m_nome</div><div class="ttdef"><b>Definition:</b> Funcionario.hpp:57</div></div>
+<div class="ttc" id="classFuncionario_html_ac9ccf61efca75f4130e79ef06b7278a2"><div class="ttname"><a href="classFuncionario.html#ac9ccf61efca75f4130e79ef06b7278a2">Funcionario::m_especialidade</a></div><div class="ttdeci">std::string m_especialidade</div><div class="ttdef"><b>Definition:</b> Funcionario.hpp:62</div></div>
+<div class="ttc" id="classFuncionario_html_aa09cfc8a989b1a292cd21380a5fcb8bc"><div class="ttname"><a href="classFuncionario.html#aa09cfc8a989b1a292cd21380a5fcb8bc">Funcionario::m_tipo_sanguineo</a></div><div class="ttdeci">std::string m_tipo_sanguineo</div><div class="ttdef"><b>Definition:</b> Funcionario.hpp:60</div></div>
+<div class="ttc" id="classFuncionario_html_abc81f1af6f17d0cc9484e166a94ff4fe"><div class="ttname"><a href="classFuncionario.html#abc81f1af6f17d0cc9484e166a94ff4fe">Funcionario::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const Funcionario &amp;funcionario)</div><div class="ttdoc">Sobrecarga do operador de extração. </div><div class="ttdef"><b>Definition:</b> Funcionario.cpp:93</div></div>
+<div class="ttc" id="classFuncionario_html_ab8b1fa2c4d830ea6a03c5d1db8ee1002"><div class="ttname"><a href="classFuncionario.html#ab8b1fa2c4d830ea6a03c5d1db8ee1002">Funcionario::m_fator_rh</a></div><div class="ttdeci">char m_fator_rh</div><div class="ttdef"><b>Definition:</b> Funcionario.hpp:61</div></div>
+<div class="ttc" id="classFuncionario_html_a800273bd909dc88f821a414abebc442c"><div class="ttname"><a href="classFuncionario.html#a800273bd909dc88f821a414abebc442c">Funcionario::~Funcionario</a></div><div class="ttdeci">~Funcionario()</div><div class="ttdoc">Destrutor da classe Funcionario. </div><div class="ttdef"><b>Definition:</b> Funcionario.cpp:27</div></div>
+<div class="ttc" id="classFuncionario_html"><div class="ttname"><a href="classFuncionario.html">Funcionario</a></div><div class="ttdef"><b>Definition:</b> Funcionario.hpp:18</div></div>
+<div class="ttc" id="classFuncionario_html_a74bd5f4c71bfb42219f0cce2a72eeb47"><div class="ttname"><a href="classFuncionario.html#a74bd5f4c71bfb42219f0cce2a72eeb47">Funcionario::m_cpf</a></div><div class="ttdeci">std::string m_cpf</div><div class="ttdef"><b>Definition:</b> Funcionario.hpp:58</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

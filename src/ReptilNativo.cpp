@@ -1,7 +1,23 @@
+/**
+* @file	RepitlNativo.cpp
+* @brief	Implementação da classe que representa os répteis nativos
+* @author	Alvaro	Prudencio Araujo
+* @author	Artur Augusto Rocha Coelho
+* @author	Song Jong Márcio Simoni da Costa
+* @since	07/05/2019
+* @date	26/06/2019
+*/
+
 #include "ReptilNativo.hpp"
 
-// construtores e destrutores {
-ReptilNativo::ReptilNativo() {}
+/**
+* @brief	Construtor padrão da classe ReptilNativo
+*/
+ReptilNativo::ReptilNativo() { }
+
+/**
+* @brief	Construtor parametrizado da classe ReptilNativo
+*/
 ReptilNativo::ReptilNativo(int id, std::string classe, std::string nome_cientifico,
 		 	   char sexo, double tamanho, std::string dieta, Veterinario* veterinario,
 		 	   Tratador* tratador, std::string nome_batismo, bool venenoso, std::string tipo_veneno,
@@ -9,6 +25,10 @@ ReptilNativo::ReptilNativo(int id, std::string classe, std::string nome_cientifi
 		 	   Reptil(id, classe, nome_cientifico, sexo, tamanho,dieta, veterinario, tratador,
 		 	   nome_batismo, venenoso,tipo_veneno),
 		 	   AnimalNativo(autorizacao_ibama, uf_origem) { }
+
+/**
+* @brief	Destrutor da classe ReptilNativo
+*/
 ReptilNativo::~ReptilNativo() {}
 // } construtores e destrutores
 
@@ -18,6 +38,9 @@ ReptilNativo::~ReptilNativo() {}
 // setters {
 // } setters
 
+/**
+* @brief	Sobrecarga da função print da biblioteca ostream
+*/
 std::ostream& ReptilNativo::print(std::ostream& os) const {
 			return os << "ID: " << m_id << endl
 					  << "Classe: " << m_classe << endl
@@ -34,6 +57,9 @@ std::ostream& ReptilNativo::print(std::ostream& os) const {
 					  << "UF de origem: " << m_uf_origem << endl;
 }
 
+/**
+* @brief	Método que escreve os dados do réptil nativo em um arquivo
+*/
 void ReptilNativo::escreverEmArquivo(){
 	std::ofstream arquivo ("Animais.csv");
 	if (arquivo) {

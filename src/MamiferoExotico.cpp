@@ -1,7 +1,22 @@
+/**
+* @file	MamiferoExotico.cpp
+* @brief	Implementação da classe que representa os mamíferos exóticos
+* @author	Alvaro	Prudencio Araujo
+* @author	Artur Augusto Rocha Coelho
+* @author	Song Jong Márcio Simoni da Costa
+* @since	07/05/2019
+* @date	26/06/2019
+*/
+
 #include "MamiferoExotico.hpp"
 
-// construtores e destrutores {
-MamiferoExotico::MamiferoExotico() {}
+/**
+* @brief	Construtor padrão da classe MamiferoExotico
+*/
+MamiferoExotico::MamiferoExotico() { }
+/**
+* @brief	Construtor parametrizado da classe MamiferoExotico
+*/
 MamiferoExotico::MamiferoExotico(int id, std::string classe, std::string nome_cientifico,
 		 	   char sexo, double tamanho, std::string dieta, Veterinario* veterinario,
 		 	   Tratador* tratador, std::string nome_batismo, std::string cor_pelo,
@@ -9,8 +24,10 @@ MamiferoExotico::MamiferoExotico(int id, std::string classe, std::string nome_ci
 		 	   Mamifero(id, classe, nome_cientifico, sexo, tamanho, dieta, veterinario,
 		 	   tratador, nome_batismo, cor_pelo),
 		 	   AnimalExotico(autorizacao_ibama, pais_origem) { }
-MamiferoExotico::~MamiferoExotico() {}
-// } construtores e destrutores
+/**
+* @brief	Destrutor da classe MamiferoExotico
+*/
+MamiferoExotico::~MamiferoExotico() { }
 
 // getters {
 // } getters
@@ -18,6 +35,9 @@ MamiferoExotico::~MamiferoExotico() {}
 // setters {
 // } setters
 
+/**
+* @brief	Sobrecarga da função print da biblioteca ostream
+*/
 std::ostream& MamiferoExotico::print(std::ostream& os) const {
 			return os << "ID: " << m_id << endl
 					  << "Classe: " << m_classe << endl
@@ -33,6 +53,9 @@ std::ostream& MamiferoExotico::print(std::ostream& os) const {
 					  << "País de origem: " << m_pais_origem << endl;
 }
 
+/**
+* @brief	Método que escreve os dados do mamífero exótico em um arquivo
+*/
 void MamiferoExotico::escreverEmArquivo(){
 	std::ofstream arquivo ("Animais.csv");
 	if (arquivo) {

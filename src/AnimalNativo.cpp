@@ -1,11 +1,29 @@
+/**
+* @file	AnimalNativo.cpp
+* @brief	Implementação da classe que representa os animais nativos
+* @author	Alvaro	Prudencio Araujo
+* @author	Artur Augusto Rocha Coelho
+* @author	Song Jong Márcio Simoni da Costa
+* @since	07/05/2019
+* @date	26/06/2019
+*/
+
 #include "AnimalNativo.hpp"
 
-// construtores e destrutores {
-AnimalNativo::AnimalNativo() {}
+/**
+* @brief	Construtor padrão da classe AnimalNativo
+*/
+AnimalNativo::AnimalNativo() { }
+/**
+* @brief	Construtor parametrizado da classe AnimalNativo
+*/
 AnimalNativo::AnimalNativo(std::string autorizacao_ibama, std::string uf_origem) :
 						  AnimalSilvestre(autorizacao_ibama), m_uf_origem(uf_origem) { }
-AnimalNativo::~AnimalNativo() {}
-// } construtores e destrutores
+/**
+* @brief	Destrutor da classe AnimalNativo
+*/
+AnimalNativo::~AnimalNativo() { }
+
 
 // getters {
 std::string AnimalNativo::get_m_uf_origem(void) {

@@ -1,3 +1,13 @@
+/**
+* @file	AveExotico.hpp
+* @brief	Classe que representa as aves exóticas
+* @author	Alvaro	Prudencio Araujo
+* @author	Artur Augusto Rocha Coelho
+* @author	Song Jong Márcio Simoni da Costa
+* @since	07/05/2019
+* @date	26/06/2019
+*/
+
 #ifndef _AVE_EXOTICO_HPP_
 #define _AVE_EXOTICO_HPP_
 

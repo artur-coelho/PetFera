@@ -1,3 +1,13 @@
+/**
+* @file	RepitlExotico.hpp
+* @brief	Classe que representa os répteis exóticos
+* @author	Alvaro	Prudencio Araujo
+* @author	Artur Augusto Rocha Coelho
+* @author	Song Jong Márcio Simoni da Costa
+* @since	07/05/2019
+* @date	26/06/2019
+*/
+
 #ifndef _REPTIL_EXOTICO_HPP_
 #define _REPTIL_EXOTICO_HPP_
 

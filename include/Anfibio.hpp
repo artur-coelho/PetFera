@@ -1,3 +1,13 @@
+/**
+* @file	Anifibio.hpp
+* @brief	Classe que representa os anfíbios
+* @author	Alvaro	Prudencio Araujo
+* @author	Artur Augusto Rocha Coelho
+* @author	Song Jong Márcio Simoni da Costa
+* @since	07/05/2019
+* @date	26/06/2019
+*/
+
 #ifndef _ANFIBIO_HPP_
 #define _ANFIBIO_HPP_
 
@@ -33,8 +43,8 @@ class Anfibio : public Animal {
 
 	protected:
 		// membros {
-		int m_total_de_mudas;
-		Date m_ultima_muda;
+		int m_total_de_mudas;	/**< Define o número de mudas do anfíbio */
+		Date m_ultima_muda;	/**< Define a data da última muda */
 		// } membros
 };
 

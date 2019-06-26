@@ -1,3 +1,13 @@
+/**
+* @file	Mamifero.hpp
+* @brief	Classe que representa os mamíferos
+* @author	Alvaro	Prudencio Araujo
+* @author	Artur Augusto Rocha Coelho
+* @author	Song Jong Márcio Simoni da Costa
+* @since	07/05/2019
+* @date	26/06/2019
+*/
+
 #ifndef _MAMIFERO_HPP_
 #define _MAMIFERO_HPP_
 
@@ -32,7 +42,7 @@ class Mamifero : public Animal{
 
 	protected:
 		// membros {
-		std::string m_cor_pelo;
+		std::string m_cor_pelo;	/**< Define a cor do pelo do mamífero */
 		// } membros
 };
 

@@ -1,7 +1,23 @@
+/**
+* @file	RepitlExotico.cpp
+* @brief	Implementação da classe que representa os répteis exóticos
+* @author	Alvaro	Prudencio Araujo
+* @author	Artur Augusto Rocha Coelho
+* @author	Song Jong Márcio Simoni da Costa
+* @since	07/05/2019
+* @date	26/06/2019
+*/
+
 #include "ReptilExotico.hpp"
 
-// construtores e destrutores {
-ReptilExotico::ReptilExotico() {}
+/**
+* @brief	Construtor padrão da classe ReptilExotico
+*/
+ReptilExotico::ReptilExotico() { }
+
+/**
+* @brief	Construtor parametrizado da classe ReptilExotico
+*/
 ReptilExotico::ReptilExotico(int id, std::string classe, std::string nome_cientifico,
 		 	   char sexo, double tamanho, std::string dieta, Veterinario* veterinario,
 		 	   Tratador* tratador, std::string nome_batismo, bool venenoso, std::string tipo_veneno,
@@ -9,8 +25,11 @@ ReptilExotico::ReptilExotico(int id, std::string classe, std::string nome_cienti
 		 	   Reptil(id, classe, nome_cientifico, sexo, tamanho,dieta, veterinario, tratador,
 		 	   nome_batismo, venenoso,tipo_veneno),
 		 	   AnimalExotico(autorizacao_ibama, pais_origem) { }
+
+/**
+* @brief	Destrutor da classe ReptilExotico
+*/
 ReptilExotico::~ReptilExotico() {}
-// } construtores e destrutores
 
 // getters {
 // } getters
@@ -18,6 +37,9 @@ ReptilExotico::~ReptilExotico() {}
 // setters {
 // } setters
 
+/**
+* @brief	Sobrecarga da função print da biblioteca ostream
+*/
 std::ostream& ReptilExotico::print(std::ostream& os) const {
 			return os << "ID: " << m_id << endl
 					  << "Classe: " << m_classe << endl
@@ -34,6 +56,9 @@ std::ostream& ReptilExotico::print(std::ostream& os) const {
 					  << "País de origem: " << m_pais_origem << endl;
 }
 
+/**
+* @brief	Método que escreve os dados do réptil exótico em um arquivo
+*/
 void ReptilExotico::escreverEmArquivo(){
 	std::ofstream arquivo ("Animais.csv");
 	if (arquivo) {

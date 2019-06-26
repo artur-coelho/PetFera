@@ -1,3 +1,13 @@
+/**
+* @file	PetFera.hpp
+* @brief	Classe que representa o petshop
+* @author	Alvaro	Prudencio Araujo
+* @author	Artur Augusto Rocha Coelho
+* @author	Song Jong Márcio Simoni da Costa
+* @since	07/05/2019
+* @date	26/06/2019
+*/
+
 #ifndef _PETFERA_HPP_
 #define _PETFERA_HPP_
 
@@ -42,8 +52,8 @@ class PetFera {
 		void carregar();
 		void salvar();
 	private:
-		std::map<int, Funcionario*> funcionarios;
-		std::map<int, Animal*> animais;
+		std::map<int, Funcionario*> funcionarios;	/**< Define um container que irá armazenar ponteiros para funcionários */
+		std::map<int, Animal*> animais;	/**< Define um container que irá armazenar ponteiros para animais */
 };
 
 #endif

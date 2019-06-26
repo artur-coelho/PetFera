@@ -1,7 +1,22 @@
+/**
+* @file	Anifibio.cpp
+* @brief	Implementação classe que representa os anfíbios
+* @author	Alvaro	Prudencio Araujo
+* @author	Artur Augusto Rocha Coelho
+* @author	Song Jong Márcio Simoni da Costa
+* @since	07/05/2019
+* @date	26/06/2019
+*/
+
 #include "AnfibioNativo.hpp"
 
-// construtores e destrutores {
-AnfibioNativo::AnfibioNativo() {}
+/**
+* @brief	Construtor padrão da classe AnfibioNativo
+*/
+AnfibioNativo::AnfibioNativo() { }
+/**
+* @brief	Construtor parametrizado da classe AnfibioNativo
+*/
 AnfibioNativo::AnfibioNativo(int id, std::string classe, std::string nome_cientifico, char sexo,
 		 	           double tamanho, std::string dieta, Veterinario* veterinario,
 		 	           Tratador* tratador, std::string nome_batismo, int total_de_mudas, Date ultima_muda,
@@ -9,9 +24,14 @@ AnfibioNativo::AnfibioNativo(int id, std::string classe, std::string nome_cienti
 		 	           Anfibio(id, classe, nome_cientifico, sexo, tamanho, dieta, veterinario,
 			   		   tratador, nome_batismo, total_de_mudas, ultima_muda),
 			   		   AnimalNativo(autorizacao_ibama, uf_origem) { }
+/**
+* @brief	Destrutor da classe Anfibio
+*/
 AnfibioNativo::~AnfibioNativo() {}
-// } construtores e destrutores
 
+/**
+* @brief	Sobrecarga da função print da biblioteca ostream
+*/
 std::ostream& AnfibioNativo::print(std::ostream& os) const {
 			return os << "ID: " << m_id << endl
 					  << "Classe: " << m_classe << endl
@@ -28,6 +48,9 @@ std::ostream& AnfibioNativo::print(std::ostream& os) const {
 					  << "UF de origem: " << m_uf_origem << endl;
 }
 
+/**
+* @brief	Método que escreve os dados do anfibio nativo em um arquivo
+*/
 void AnfibioNativo::escreverEmArquivo(){
 	std::ofstream arquivo ("Animais.csv");
 	if (arquivo) {

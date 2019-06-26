@@ -1,14 +1,33 @@
+/**
+* @file	Mamifero.cpp
+* @brief	Implementação da classe que representa os mamíferos
+* @author	Alvaro	Prudencio Araujo
+* @author	Artur Augusto Rocha Coelho
+* @author	Song Jong Márcio Simoni da Costa
+* @since	07/05/2019
+* @date	26/06/2019
+*/
+
 #include "Mamifero.hpp"
 
-// construtores e destrutores {
-Mamifero::Mamifero() {}
+/**
+* @brief	Construtor padrão da classe Mamifero
+*/
+Mamifero::Mamifero() { }
+
+/**
+* @brief	Construtor parametrizado da classe Mamifero
+*/
 Mamifero::Mamifero(int id, std::string classe, std::string nome_cientifico,
 		 	   char sexo, double tamanho, std::string dieta, Veterinario* veterinario,
 		 	   Tratador* tratador, std::string nome_batismo, std::string cor_pelo) :
 			   Animal(id, classe, nome_cientifico, sexo, tamanho, dieta, veterinario,
 		 	   tratador, nome_batismo), m_cor_pelo(cor_pelo) { }
-Mamifero::~Mamifero() {}
-// } construtores e destrutores
+		 	   
+/**
+* @brief	Destrutor da classe Mamifero
+*/
+Mamifero::~Mamifero() { }
 
 // getters {
 std::string Mamifero::get_m_cor_pelo(void) {
@@ -22,6 +41,9 @@ void Mamifero::set_m_cor_pelo(std::string cor_pelo) {
 }
 // } setters
 
+/**
+* @brief	Sobrecarga da função print da biblioteca ostream
+*/
 std::ostream& Mamifero::print(std::ostream& os) const {
 			return os << "ID: " << m_id << endl
 					  << "Classe: " << m_classe << endl
@@ -35,6 +57,9 @@ std::ostream& Mamifero::print(std::ostream& os) const {
 					  << "Cor do pelo: " << m_cor_pelo << endl;
 }
 
+/**
+* @brief	Método que escreve os dados do mamífero em um arquivo
+*/
 void Mamifero::escreverEmArquivo(){
 	std::ofstream arquivo ("Animais.csv");
 	if (arquivo) {
@@ -56,6 +81,9 @@ void Mamifero::escreverEmArquivo(){
 	}
 }
 
+/**
+* @brief	Método que altera um determinado dado do mamífero
+*/
 void Mamifero::alterarDado(){
 	return;
 }

@@ -1,3 +1,13 @@
+/**
+* @file	Funcionario.hpp
+* @brief	Classe que representa os funcionarios
+* @author	Alvaro	Prudencio Araujo
+* @author	Artur Augusto Rocha Coelho
+* @author	Song Jong Márcio Simoni da Costa
+* @since	07/05/2019
+* @date	26/06/2019
+*/
+
 #ifndef _FUNCIONARIO_HPP_
 #define _FUNCIONARIO_HPP_
 
@@ -43,13 +53,13 @@ class Funcionario {
 
 	protected:
 		// membros {
-		int m_id;
-		std::string m_nome;
-		std::string m_cpf;
-		short m_idade;
-		std::string m_tipo_sanguineo;
-		char m_fator_rh;
-		std::string m_especialidade;
+		int m_id;	/**< Define o id do funcionário	*/
+		std::string m_nome;	/**< Define o nome do funcionário */
+		std::string m_cpf;	/**< Define o cpf do funcionário */
+		short m_idade;	/**< Define a idade do funcionário	*/
+		std::string m_tipo_sanguineo;	/**< Define o tipo sanguíneo do funcionário	*/
+		char m_fator_rh;	/**< Define se o funcionário possui fator RH ou não	*/
+		std::string m_especialidade;	/**< Define qual a especialidade do funcionário(tratador ou veterinário) */
 		// } membros
 };
 
