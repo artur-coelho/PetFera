@@ -6,6 +6,7 @@ var searchData=
   ['animal',['Animal',['../classAnimal.html',1,'']]],
   ['animalexotico',['AnimalExotico',['../classAnimalExotico.html',1,'']]],
   ['animalnativo',['AnimalNativo',['../classAnimalNativo.html',1,'']]],
+  ['animalsilvestre',['AnimalSilvestre',['../classAnimalSilvestre.html',1,'']]],
   ['ave',['Ave',['../classAve.html',1,'']]],
   ['aveexotico',['AveExotico',['../classAveExotico.html',1,'']]],
   ['avenativo',['AveNativo',['../classAveNativo.html',1,'']]]

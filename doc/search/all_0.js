@@ -16,6 +16,7 @@ var searchData=
   ['animalnativo',['AnimalNativo',['../classAnimalNativo.html',1,'AnimalNativo'],['../classAnimalNativo.html#a166ca155fc305b9ae674546988b27f94',1,'AnimalNativo::AnimalNativo()'],['../classAnimalNativo.html#a5e426d8b9d3d535ce944503627a0d596',1,'AnimalNativo::AnimalNativo(std::string autorizacao_ibama, std::string uf_origem)']]],
   ['animalnativo_2ecpp',['AnimalNativo.cpp',['../AnimalNativo_8cpp.html',1,'']]],
   ['animalnativo_2ehpp',['AnimalNativo.hpp',['../AnimalNativo_8hpp.html',1,'']]],
+  ['animalsilvestre',['AnimalSilvestre',['../classAnimalSilvestre.html',1,'AnimalSilvestre'],['../classAnimalSilvestre.html#ab399a508e477d58526bdde4c49365488',1,'AnimalSilvestre::AnimalSilvestre()'],['../classAnimalSilvestre.html#aec66dbda96e9aa2bd231fd3b699c948f',1,'AnimalSilvestre::AnimalSilvestre(std::string autorizacao_ibama)']]],
   ['animalsilvestre_2ecpp',['AnimalSilvestre.cpp',['../AnimalSilvestre_8cpp.html',1,'']]],
   ['animalsilvestre_2ehpp',['AnimalSilvestre.hpp',['../AnimalSilvestre_8hpp.html',1,'']]],
   ['ave',['Ave',['../classAve.html',1,'Ave'],['../classAve.html#a31bc97c3258df566381300c8b9abc73a',1,'Ave::Ave()'],['../classAve.html#a86e8dcbdb4bce1de976b6b788f17107a',1,'Ave::Ave(int id, std::string classe, std::string nome_cientifico, char sexo, double tamanho, std::string dieta, Veterinario *veterinario, Tratador *tratador, std::string nome_batismo, double tamanho_do_bico_cm, double envergadura_das_asas)']]],

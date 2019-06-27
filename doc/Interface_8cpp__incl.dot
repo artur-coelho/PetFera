@@ -25,6 +25,9 @@ digraph "src/Interface.cpp"
   Node9 [label="Animal.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Animal_8hpp.html",tooltip="Classe que representa os animais. "];
   Node9 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node9 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node10 [label="AnimalExotico.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AnimalExotico_8hpp.html",tooltip="Classe que representa os animais exoticos. "];
   Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

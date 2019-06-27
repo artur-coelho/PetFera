@@ -28,7 +28,7 @@ AveExotico::AveExotico(int id, std::string classe, std::string nome_cientifico,
 * @brief	Destrutor da classe AveExotico
 */
 AveExotico::~AveExotico() { }
-/
+
 
 // getters {
 // } getters

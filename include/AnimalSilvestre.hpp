@@ -31,7 +31,7 @@ class AnimalSilvestre {
 
 	protected:
 		// membros {
-		std::string m_autorizacao_ibama;	/**< Define a aturização de transporte emitida pelo IBAMA
+		std::string m_autorizacao_ibama;	/**< Define a aturização de transporte emitida pelo IBAMA */
 		// } membros
 };
 

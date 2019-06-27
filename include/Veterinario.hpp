@@ -39,7 +39,7 @@ class Veterinario : public Funcionario {
 
 	protected:
 		// membros {
-		std::string m_crmv;	/**< Define a crmv do veterinário
+		std::string m_crmv;	/**< Define a crmv do veterinário */
 		// } membros
 };
 

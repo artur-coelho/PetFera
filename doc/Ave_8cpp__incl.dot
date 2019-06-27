@@ -20,4 +20,7 @@ digraph "src/Ave.cpp"
   Node2 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node8 [label="Tratador.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Tratador_8hpp.html",tooltip="Classe que representa os tratadores dos animais. "];
   Node8 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
 }

@@ -39,7 +39,7 @@ class Tratador : public Funcionario {
 
 	protected:
 		// membros {
-		int m_nivel_de_seguranca;	/**< Define o nível de segurança do tratador
+		int m_nivel_de_seguranca;	/**< Define o nível de segurança do tratador */
 		// } membros
 };
 
